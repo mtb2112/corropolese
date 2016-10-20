@@ -1,7 +1,11 @@
-body {
-color: $text-color;
-font-size: $base-font-size;
-font-family: $base-font-family;
-font-weight: $base-font-weight;
-line-height: 1.6;
+/* Proximanova - Black */
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/proximanova-black-webfont.eot');
+    src: url('fonts/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanova-black-webfont.woff') format('woff'),
+         url('fonts/proximanova-black-webfont.ttf') format('truetype'),
+         url('fonts/proximanova-black-webfont.svg#proximanova-black-webfont') format('svg');
+    font-weight: 500;
+    font-style: normal;
 }

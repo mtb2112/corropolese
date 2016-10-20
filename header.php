@@ -211,7 +211,8 @@
                 <div class="logo_container">
                     <span class="logo_helper"></span>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                        <img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" />
+                        <span class="title"><?php echo esc_attr( get_bloginfo( 'name' ) ); ?></span>
+                        <span class="tagline"><?php echo esc_attr( get_bloginfo( 'description' ) ); ?></span>
                     </a>
                 </div>
                 <div id="et-top-navigation" data-height="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>" data-fixed-height="<?php echo esc_attr( et_get_option( 'minimized_menu_height', '40' ) ); ?>">
@@ -278,5 +279,3 @@
                 </div>
             </div>
         </header> <!-- #main-header -->
-
-        <div id="et-main-area">
