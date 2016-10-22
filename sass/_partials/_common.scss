@@ -9,3 +9,9 @@
         }
     }
 }
+
+@media only screen and (max-width: $screen__xl) {
+    .container {
+        padding: 0 30px;
+    }
+}

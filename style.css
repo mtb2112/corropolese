@@ -12,6 +12,7 @@
 ------------------------------------------------------- */
 /* Colors */
 /* Fonts */
+/* Break Points */
 @font-face {
   font-family: 'Proximanova Black';
   src: url("fonts/proximanova-black-webfont.eot");
@@ -57,40 +58,46 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-size: 62.5%;
+  font-family: "Proximanova Regular", Arial, sans-serif;
 }
 
-/* line 26, sass/_partials/_reset.scss */
+/* line 27, sass/_partials/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 30, sass/_partials/_reset.scss */
+/* line 31, sass/_partials/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 33, sass/_partials/_reset.scss */
+/* line 34, sass/_partials/_reset.scss */
+a {
+  color: #7b0000;
+}
+
+/* line 37, sass/_partials/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 36, sass/_partials/_reset.scss */
+/* line 40, sass/_partials/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 39, sass/_partials/_reset.scss */
+/* line 43, sass/_partials/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 44, sass/_partials/_reset.scss */
+/* line 48, sass/_partials/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -106,8 +113,356 @@ table {
   display: none;
 }
 
+@media only screen and (max-width: 1180px) {
+  /* line 14, sass/_partials/_common.scss */
+  .container {
+    padding: 0 30px;
+  }
+}
 /* line 1, sass/_partials/_header.scss */
+.container {
+  max-width: 1180px;
+  width: 100%;
+}
+
+/* line 6, sass/_partials/_header.scss */
 #main-header {
   border-top: 7px solid #7b0000;
   box-shadow: inset 0 7px #007b5a;
+  padding-top: 20px;
+}
+/* line 12, sass/_partials/_header.scss */
+#main-header .logo_container a {
+  position: relative;
+}
+/* line 15, sass/_partials/_header.scss */
+#main-header .logo_container a:after {
+  content: '\0041';
+  font-family: "Glyphter";
+  font-size: 6.2rem;
+  color: #000000;
+  position: absolute;
+  right: -46px;
+  top: -19px;
+}
+/* line 27, sass/_partials/_header.scss */
+#main-header .title {
+  font-family: "Proximanova Black";
+  font-size: 4.17rem;
+}
+/* line 32, sass/_partials/_header.scss */
+#main-header .tagline {
+  font-family: "Proximanova Black";
+  font-size: 1.43rem;
+  color: #000000;
+  position: absolute;
+  right: 17px;
+  bottom: -19px;
+}
+/* line 41, sass/_partials/_header.scss */
+#main-header .et_search_outer {
+  position: relative;
+  float: right;
+  width: 60%;
+}
+/* line 47, sass/_partials/_header.scss */
+#main-header .container.et_search_form_container {
+  opacity: 1;
+  height: inherit;
+}
+/* line 52, sass/_partials/_header.scss */
+#main-header .et-search-form {
+  position: relative;
+}
+/* line 55, sass/_partials/_header.scss */
+#main-header .et-search-form input {
+  position: relative;
+  height: 32px;
+  border: 1px solid #d5d5d5;
+  display: inline-block;
+  top: inherit;
+  right: inherit;
+  bottom: inherit;
+  vertical-align: top;
+}
+/* line 67, sass/_partials/_header.scss */
+#main-header .et-search-field {
+  text-align: right;
+  padding-right: 20px;
+  width: 84.4%;
+  margin-left: 7px;
+  float: left;
+  font-size: 1.3rem;
+}
+/* line 76, sass/_partials/_header.scss */
+#main-header .searchsubmit {
+  width: 11.3%;
+  float: right;
+  font-family: "FontAwesome";
+  font-size: 1.7rem;
+  color: #d5d5d5;
+}
+
+/* line 86, sass/_partials/_header.scss */
+.et_header_style_left .logo_container {
+  position: relative;
+  float: left;
+  width: 38%;
+  margin-top: 35px;
+}
+/* line 93, sass/_partials/_header.scss */
+.et_header_style_left #et-top-navigation {
+  padding-top: 0;
+  width: 46%;
+}
+
+/* line 100, sass/_partials/_header.scss */
+#et-secondary-nav li {
+  padding-top: 2px;
+  margin-right: 13px;
+}
+/* line 104, sass/_partials/_header.scss */
+#et-secondary-nav li:first-child {
+  border-right: 1px solid #7b0000;
+  line-height: 1.7rem;
+  padding-right: 15px;
+}
+
+/* line 112, sass/_partials/_header.scss */
+#et-secondary-menu {
+  float: none;
+}
+/* line 115, sass/_partials/_header.scss */
+#et-secondary-menu .menu-item {
+  text-transform: uppercase;
+  display: baseline;
+}
+/* line 122, sass/_partials/_header.scss */
+#et-secondary-menu > ul > li a {
+  font-size: 1.3rem;
+  padding-bottom: 0;
+}
+/* line 129, sass/_partials/_header.scss */
+#et-secondary-menu > ul > li:first-child a:before {
+  font-family: "FontAwesome";
+  content: '\f041';
+  font-size: 2.3rem;
+  position: absolute;
+  left: -20px;
+}
+
+/* line 142, sass/_partials/_header.scss */
+nav#top-menu-nav {
+  float: right;
+  clear: both;
+}
+
+/* line 147, sass/_partials/_header.scss */
+#mega-menu-wrap-primary-menu {
+  background: transparent;
+}
+/* line 152, sass/_partials/_header.scss */
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link {
+  color: #7b0000;
+  text-transform: uppercase;
+  padding: 0;
+  margin-right: 48px;
+}
+/* line 158, sass/_partials/_header.scss */
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link:hover {
+  background: transparent;
+  color: #7b0000;
+}
+/* line 165, sass/_partials/_header.scss */
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item:last-child a {
+  margin-right: 0;
+}
+/* line 171, sass/_partials/_header.scss */
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item.mega-toggle-on a.mega-menu-link {
+  background: transparent;
+  color: #7b0000;
+}
+/* line 180, sass/_partials/_header.scss */
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
+  background: #430000;
+  color: #ffffff;
+  margin: 1px 0;
+  transition: background-color 0.3s ease;
+}
+/* line 186, sass/_partials/_header.scss */
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover {
+  background: #7b0000;
+  color: #ffffff;
+}
+
+/* line 197, sass/_partials/_header.scss */
+#main-content .container {
+  padding-top: 0;
+}
+
+@media only screen and (max-width: 1180px) {
+  /* line 204, sass/_partials/_header.scss */
+  .et_header_style_left #et-top-navigation {
+    width: 53%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  /* line 211, sass/_partials/_header.scss */
+  #et-secondary-menu,
+  #et-secondary-nav {
+    display: block !important;
+    float: right;
+  }
+
+  /* line 217, sass/_partials/_header.scss */
+  #et-secondary-nav {
+    float: right;
+  }
+
+  /* line 222, sass/_partials/_header.scss */
+  #main-header .et_search_outer {
+    margin-top: 5px;
+  }
+  /* line 226, sass/_partials/_header.scss */
+  #main-header .et-search-form {
+    float: right;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  /* line 232, sass/_partials/_header.scss */
+  #main-header .et-search-field {
+    margin-left: 0;
+  }
+  /* line 236, sass/_partials/_header.scss */
+  #main-header .searchsubmit {
+    width: 14.3%;
+  }
+
+  /* line 244, sass/_partials/_header.scss */
+  #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link {
+    margin-right: 24px;
+  }
+  /* line 249, sass/_partials/_header.scss */
+  #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item:last-child > a.mega-menu-link {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 260, sass/_partials/_header.scss */
+  .et_header_style_left .logo_container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: inherit;
+    height: inherit;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  /* line 273, sass/_partials/_header.scss */
+  .et_header_style_left .logo_container {
+    position: relative;
+    width: 100%;
+    float: none;
+    text-align: center;
+    left: inherit;
+    top: inherit;
+    margin-top: 20px;
+  }
+  /* line 283, sass/_partials/_header.scss */
+  .et_header_style_left #et-top-navigation {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /* line 288, sass/_partials/_header.scss */
+  .et_header_style_left #et-secondary-menu {
+    width: 100%;
+  }
+  /* line 292, sass/_partials/_header.scss */
+  .et_header_style_left #et-secondary-nav {
+    float: left;
+    width: 50%;
+  }
+
+  /* line 299, sass/_partials/_header.scss */
+  #main-header .et_search_outer {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 307, sass/_partials/_header.scss */
+  #top-menu-nav {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 94%;
+    z-index: 9999;
+  }
+
+  /* line 316, sass/_partials/_header.scss */
+  #mega-menu-wrap-primary-menu .mega-menu-toggle {
+    background: #d5d5d5;
+    border-radius: 0;
+    width: 37px;
+  }
+  /* line 322, sass/_partials/_header.scss */
+  #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-1:after {
+    content: '';
+  }
+  /* line 329, sass/_partials/_header.scss */
+  #mega-menu-wrap-primary-menu .mega-menu-toggle.mega-menu-open .mega-toggle-block-1:after {
+    content: '';
+  }
+  /* line 338, sass/_partials/_header.scss */
+  #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link {
+    background: #7b0000;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #ffffff;
+    margin-right: 0;
+  }
+  /* line 348, sass/_partials/_header.scss */
+  #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item.mega-toggle-on a.mega-menu-link {
+    background: #7b0000;
+    color: #ffffff;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 360, sass/_partials/_header.scss */
+  .et_header_style_left #et-secondary-nav {
+    float: none;
+    margin-left: 25px;
+    width: inherit;
+  }
+
+  /* line 368, sass/_partials/_header.scss */
+  #main-header .et_search_outer {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* line 376, sass/_partials/_header.scss */
+  .et_header_style_left .logo_container {
+    transform: scale(0.8, 0.8);
+  }
+}
+/* line 1, sass/_partials/_footer.scss */
+#footer-bottom {
+  padding: 10px 0;
+  background-color: #7b0000;
+}
+/* line 5, sass/_partials/_footer.scss */
+#footer-bottom #footer-info {
+  color: #ffffff;
+  padding-bottom: 0;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+/* line 14, sass/_partials/_footer.scss */
+.et-social-icon a {
+  color: #ffffff;
 }

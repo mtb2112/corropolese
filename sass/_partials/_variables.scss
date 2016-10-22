@@ -1,6 +1,23 @@
 /* Colors */
 $red: #7b0000;
+$dk-red: #430000;
 $green: #007b5a;
+$black: #000000;
+$white: #ffffff;
+$lt-gray: #d5d5d5;
 
 /* Fonts */
-$base-font: 'proximanova';
+$proximanova: 'Proximanova Regular';
+$proximanova-black: 'Proximanova Black';
+$base-font: Arial, sans-serif;
+$site-font: $proximanova, $base-font;
+$baker-font: 'Glyphter';
+$font-awesome: 'FontAwesome';
+
+/* Break Points */
+$screen__xxs: 320px;
+$screen__xs: 480px;
+$screen__s: 640px;
+$screen__m: 768px;
+$screen__l: 980px;
+$screen__xl: 1180px;

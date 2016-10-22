@@ -57,30 +57,28 @@
 ?>
 
     <?php if ( $et_top_info_defined && ! $et_slide_header || is_customize_preview() ) : ?>
-        <div id="top-header"<?php echo $et_top_info_defined ? '' : 'style="display: none;"'; ?>>
-            <div class="container clearfix">
+        <div class="container clearfix">
 
-            <?php if ( $et_contact_info_defined ) : ?>
+        <?php if ( $et_contact_info_defined ) : ?>
 
-                <div id="et-info">
-                <?php if ( '' !== ( $et_phone_number = et_get_option( 'phone_number' ) ) ) : ?>
-                    <span id="et-info-phone"><?php echo et_sanitize_html_input_text( $et_phone_number ); ?></span>
-                <?php endif; ?>
+            <div id="et-info">
+            <?php if ( '' !== ( $et_phone_number = et_get_option( 'phone_number' ) ) ) : ?>
+                <span id="et-info-phone"><?php echo et_sanitize_html_input_text( $et_phone_number ); ?></span>
+            <?php endif; ?>
 
-                <?php if ( '' !== ( $et_email = et_get_option( 'header_email' ) ) ) : ?>
-                    <a href="<?php echo esc_attr( 'mailto:' . $et_email ); ?>"><span id="et-info-email"><?php echo esc_html( $et_email ); ?></span></a>
-                <?php endif; ?>
+            <?php if ( '' !== ( $et_email = et_get_option( 'header_email' ) ) ) : ?>
+                <a href="<?php echo esc_attr( 'mailto:' . $et_email ); ?>"><span id="et-info-email"><?php echo esc_html( $et_email ); ?></span></a>
+            <?php endif; ?>
 
-                <?php
-                if ( true === $show_header_social_icons ) {
-                    get_template_part( 'includes/social_icons', 'header' );
-                } ?>
-                </div> <!-- #et-info -->
+            <?php
+            if ( true === $show_header_social_icons ) {
+                get_template_part( 'includes/social_icons', 'header' );
+            } ?>
+            </div> <!-- #et-info -->
 
-            <?php endif; // true === $et_contact_info_defined ?>
+        <?php endif; // true === $et_contact_info_defined ?>
 
-            </div> <!-- .container -->
-        </div> <!-- #top-header -->
+        </div> <!-- .container -->
     <?php endif; // true ==== $et_top_info_defined ?>
 
     <?php if ( $et_slide_header || is_customize_preview() ) : ?>
@@ -226,33 +224,26 @@
 
                         et_show_cart_total();
                     ?>
-                    </div> <!-- #et-secondary-menu -->
-
-                    <?php if ( ( false !== et_get_option( 'show_search_icon', true ) && ! $et_slide_header ) || is_customize_preview() ) : ?>
-                    <div id="et_top_search">
-                        <span id="et_search_icon"></span>
+                    <div class="et_search_outer">
+                        <div class="et_search_form_container">
+                            <form role="search" method="get" class="et-search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                            <?php
+                                printf( '<input type="search" class="et-search-field" placeholder="SEARCH THIS SITE" value="%2$s" name="s" title="%3$s" /><input type="submit" id="searchsubmit" class="searchsubmit" name="Submit" value="">',
+                                    esc_attr__( 'Search &hellip;', 'Divi' ),
+                                    get_search_query(),
+                                    esc_attr__( 'Search for:', 'Divi' )
+                                );
+                            ?>
+                            </form>
+                        </div>
                     </div>
-                    <?php endif; // true === et_get_option( 'show_search_icon', false ) ?>
-                    <?php if ( ! $et_slide_header || is_customize_preview() ) : ?>
-                        <nav id="top-menu-nav">
-                            <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
-                        </nav>
-                    <?php endif; ?>
+                    </div> <!-- #et-secondary-menu -->
                     <?php do_action( 'et_header_top' ); ?>
                 </div> <!-- #et-top-navigation -->
+                <?php if ( ! $et_slide_header || is_customize_preview() ) : ?>
+                    <nav id="top-menu-nav">
+                        <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
+                    </nav>
+                <?php endif; ?>
             </div> <!-- .container -->
-            <div class="et_search_outer">
-                <div class="container et_search_form_container">
-                    <form role="search" method="get" class="et-search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <?php
-                        printf( '<input type="search" class="et-search-field" placeholder="%1$s" value="%2$s" name="s" title="%3$s" />',
-                            esc_attr__( 'Search &hellip;', 'Divi' ),
-                            get_search_query(),
-                            esc_attr__( 'Search for:', 'Divi' )
-                        );
-                    ?>
-                    </form>
-                    <span class="et_close_search_field"></span>
-                </div>
-            </div>
         </header> <!-- #main-header -->

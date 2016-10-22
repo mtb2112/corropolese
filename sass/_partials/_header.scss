@@ -1,4 +1,380 @@
+.container {
+    max-width: 1180px;
+    width: 100%;
+}
+
 #main-header {
     border-top: 7px solid $red;
     box-shadow: inset 0 7px $green;
+    padding-top: 20px;
+
+    .logo_container {
+        a {
+            position: relative;
+
+            &:after {
+                content: '\0041';
+                font-family: $baker-font;
+                font-size: 6.2rem;
+                color: $black;
+                position: absolute;
+                right: -46px;
+                top: -19px;
+            }
+        }
+    }
+
+    .title {
+        font-family: $proximanova-black;
+        font-size: 4.17rem;
+    }
+
+    .tagline {
+        font-family: $proximanova-black;
+        font-size: 1.43rem;
+        color: $black;
+        position: absolute;
+        right: 17px;
+        bottom: -19px;
+    }
+
+    .et_search_outer {
+        position: relative;
+        float: right;
+        width: 60%;
+    }
+
+    .container.et_search_form_container {
+        opacity: 1;
+        height: inherit;
+    }
+
+    .et-search-form {
+        position: relative;
+
+        input {
+            position: relative;
+            height: 32px;
+            border: 1px solid $lt-gray;
+            display: inline-block;
+            top: inherit;
+            right: inherit;
+            bottom: inherit;
+            vertical-align: top;
+        }
+    }
+
+    .et-search-field {
+        text-align: right;
+        padding-right: 20px;
+        width: 84.4%;
+        margin-left: 7px;
+        float: left;
+        font-size: 1.3rem;
+    }
+
+    .searchsubmit {
+        width: 11.3%;
+        float: right;
+        font-family: $font-awesome;
+        font-size: 1.7rem;
+        color: $lt-gray;
+    }
+}
+
+.et_header_style_left {
+    .logo_container {
+        position: relative;
+        float: left;
+        width: 38%;
+        margin-top: 35px;
+    }
+
+    #et-top-navigation {
+        padding-top: 0;
+        width: 46%;
+    }
+}
+
+#et-secondary-nav {
+    li {
+        padding-top: 2px;
+        margin-right: 13px;
+
+        &:first-child {
+            border-right: 1px solid $red;
+            line-height: 1.7rem;
+            padding-right: 15px;
+        }
+    }
+}
+
+#et-secondary-menu {
+    float: none;
+
+    .menu-item {
+        text-transform: uppercase;
+        display: baseline;
+    }
+
+    & > ul {
+        & > li {
+            a {
+                font-size: 1.3rem;
+                padding-bottom: 0;
+            }
+
+            &:first-child {
+                a {
+                    &:before {
+                        font-family: $font-awesome;
+                        content: '\f041';
+                        font-size: 2.3rem;
+                        position: absolute;
+                        left: -20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+nav#top-menu-nav {
+    float: right;
+    clear: both;
+}
+
+#mega-menu-wrap-primary-menu {
+    background: transparent;
+
+    #mega-menu-primary-menu {
+        & > li.mega-menu-item {
+            & > a.mega-menu-link {
+                color: $red;
+                text-transform: uppercase;
+                padding: 0;
+                margin-right: 48px;
+
+                &:hover {
+                    background: transparent;
+                    color: $red;
+                }
+            }
+
+            &:last-child {
+                a {
+                    margin-right: 0;
+                }
+            }
+
+            &.mega-toggle-on {
+                & a.mega-menu-link {
+                    background: transparent;
+                    color: $red;
+                }
+            }
+        }
+
+        & > li.mega-menu-flyout ul.mega-sub-menu {
+            li.mega-menu-item {
+                a.mega-menu-link {
+                    background: $dk-red;
+                    color: $white;
+                    margin: 1px 0;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background: $red;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#main-content {
+    .container {
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: $screen__xl) {
+    .et_header_style_left {
+        #et-top-navigation {
+            width: 53%;
+        }
+    }
+}
+
+@media only screen and (max-width: $screen__l) {
+    #et-secondary-menu,
+    #et-secondary-nav {
+        display: block !important;
+        float: right;
+    }
+
+    #et-secondary-nav {
+        float: right;
+    }
+
+    #main-header {
+        .et_search_outer {
+            margin-top: 5px;
+        }
+
+        .et-search-form {
+            float: right;
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+
+        .et-search-field {
+            margin-left: 0;
+        }
+
+        .searchsubmit {
+            width: 14.3%;
+        }
+    }
+
+    #mega-menu-wrap-primary-menu {
+        #mega-menu-primary-menu {
+            & > li.mega-menu-item {
+                & > a.mega-menu-link {
+                    margin-right: 24px;
+                }
+
+                &:last-child {
+                    & > a.mega-menu-link {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $screen__m) {
+    .et_header_style_left {
+        .logo_container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: inherit;
+            height: inherit;
+            margin-top: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: $screen__s) {
+    .et_header_style_left {
+        .logo_container {
+            position: relative;
+            width: 100%;
+            float: none;
+            text-align: center;
+            left: inherit;
+            top: inherit;
+            margin-top: 20px;
+        }
+
+        #et-top-navigation {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #et-secondary-menu {
+            width: 100%;
+        }
+
+        #et-secondary-nav {
+            float: left;
+            width: 50%;
+        }
+    }
+
+    #main-header {
+        .et_search_outer {
+            width: 50%;
+            margin-top: 0;
+        }
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    #top-menu-nav {
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        width: 94%;
+        z-index: 9999;
+    }
+
+    #mega-menu-wrap-primary-menu {
+        .mega-menu-toggle {
+            background: $lt-gray;
+            border-radius: 0;
+            width: 37px;
+
+            .mega-toggle-block-1 {
+                &:after {
+                    content: '';
+                }
+            }
+
+            &.mega-menu-open {
+                .mega-toggle-block-1 {
+                    &:after {
+                        content: '';
+                    }
+                }
+            }
+        }
+
+        #mega-menu-primary-menu {
+            & > li.mega-menu-item {
+                & > a.mega-menu-link {
+                    background: $red;
+                    color: $white;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border-bottom: 1px solid $white;
+                    margin-right: 0;
+                }
+
+                &.mega-toggle-on {
+                    a.mega-menu-link {
+                        background: $red;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $screen__xs) {
+    .et_header_style_left {
+        #et-secondary-nav {
+            float: none;
+            margin-left: 25px;
+            width: inherit;
+        }
+    }
+
+    #main-header {
+        .et_search_outer {
+            float: none;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    .et_header_style_left {
+        .logo_container {
+            transform: scale(0.8, 0.8);
+        }
+    }
 }
