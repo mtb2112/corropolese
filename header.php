@@ -79,35 +79,6 @@
 
             <?php endif; // true === $et_contact_info_defined ?>
 
-                <div id="et-secondary-menu">
-                <?php
-                    if ( ! $et_contact_info_defined && true === $show_header_social_icons ) {
-                        get_template_part( 'includes/social_icons', 'header' );
-                    } else if ( $et_contact_info_defined && true === $show_header_social_icons ) {
-                        ob_start();
-
-                        get_template_part( 'includes/social_icons', 'header' );
-
-                        $duplicate_social_icons = ob_get_contents();
-
-                        ob_end_clean();
-
-                        printf(
-                            '<div class="et_duplicate_social_icons">
-                                %1$s
-                            </div>',
-                            $duplicate_social_icons
-                        );
-                    }
-
-                    if ( '' !== $et_secondary_nav ) {
-                        echo $et_secondary_nav;
-                    }
-
-                    et_show_cart_total();
-                ?>
-                </div> <!-- #et-secondary-menu -->
-
             </div> <!-- .container -->
         </div> <!-- #top-header -->
     <?php endif; // true ==== $et_top_info_defined ?>
@@ -216,12 +187,6 @@
                     </a>
                 </div>
                 <div id="et-top-navigation" data-height="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>" data-fixed-height="<?php echo esc_attr( et_get_option( 'minimized_menu_height', '40' ) ); ?>">
-                    <?php if ( ! $et_slide_header || is_customize_preview() ) : ?>
-                        <nav id="top-menu-nav">
-                            <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
-                        </nav>
-                    <?php endif; ?>
-
                     <?php
                     if ( ! $et_top_info_defined && ( ! $et_slide_header || is_customize_preview() ) ) {
                         et_show_cart_total( array(
@@ -234,12 +199,45 @@
                         <span class="mobile_menu_bar et_pb_header_toggle et_toggle_<?php echo esc_attr( et_get_option( 'header_style', 'left' ) ); ?>_menu"></span>
                     <?php endif; ?>
 
+                    <div id="et-secondary-menu">
+                    <?php
+                        if ( ! $et_contact_info_defined && true === $show_header_social_icons ) {
+                            get_template_part( 'includes/social_icons', 'header' );
+                        } else if ( $et_contact_info_defined && true === $show_header_social_icons ) {
+                            ob_start();
+
+                            get_template_part( 'includes/social_icons', 'header' );
+
+                            $duplicate_social_icons = ob_get_contents();
+
+                            ob_end_clean();
+
+                            printf(
+                                '<div class="et_duplicate_social_icons">
+                                    %1$s
+                                </div>',
+                                $duplicate_social_icons
+                            );
+                        }
+
+                        if ( '' !== $et_secondary_nav ) {
+                            echo $et_secondary_nav;
+                        }
+
+                        et_show_cart_total();
+                    ?>
+                    </div> <!-- #et-secondary-menu -->
+
                     <?php if ( ( false !== et_get_option( 'show_search_icon', true ) && ! $et_slide_header ) || is_customize_preview() ) : ?>
                     <div id="et_top_search">
                         <span id="et_search_icon"></span>
                     </div>
                     <?php endif; // true === et_get_option( 'show_search_icon', false ) ?>
-
+                    <?php if ( ! $et_slide_header || is_customize_preview() ) : ?>
+                        <nav id="top-menu-nav">
+                            <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
+                        </nav>
+                    <?php endif; ?>
                     <?php do_action( 'et_header_top' ); ?>
                 </div> <!-- #et-top-navigation -->
             </div> <!-- .container -->
