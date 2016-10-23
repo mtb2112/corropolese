@@ -1,0 +1,125 @@
+.home.page {
+    .slider-subheading {
+        color: $red-secondary;
+    }
+
+    .et_pb_more_button {
+        color: $red-secondary;
+    }
+
+    .et_pb_button {
+        border-color: $red-secondary;
+        font-family: $proximanova-bold;
+    }
+
+    .et_pb_section,
+    .et_pb_row {
+            padding: 0;
+    }
+
+    .history {
+        background-image: url('images/about-bg.jpg');
+
+        h1 {
+            font-family: $proximanova-black;
+            font-size: 5rem;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-family: $proximanova-bold;
+            line-height: 1.9rem;
+        }
+
+        .et_pb_button {
+            color: $red-secondary;
+            font-family: $proximanova-bold;
+        }
+    }
+
+    .instagram-feed-wrap {
+        .et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content {
+            width: auto;
+            max-width: 100%;
+        }
+    }
+
+    .follow-heading {
+        h1 {
+            font-size: 5rem;
+            font-family: $proximanova-black;
+            color: $black;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-family: $proximanova-black;
+            color: $black;
+            font-size: 1.6rem;
+        }
+    }
+
+    .instagram-feed-button-wrap {
+        margin: 30px 0;
+    }
+
+    .instagram-follow-button {
+        &.et_pb_button {
+            border-color: $black;
+            color: $black;
+        }
+    }
+
+    .social-buttons-list {
+        display: inline-block;
+
+        a {
+            background-color: $black !important;
+        }
+    }
+
+    .social-links-wrap {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .et_pb_social_media_follow li {
+        a.icon {
+            width: 64px;
+            height: 64px;
+            overflow: hidden;
+
+            &:before {
+                width: 64px;
+                height: 64px;
+                padding-top: 15px;
+                font-size: 3.6rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $screen__xl) {
+    .home.page {
+        .et_pb_section .et_pb_row .et_pb_column .et_pb_module:last-child {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: $screen__l) {
+    .et_pb_column {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .home.page {
+        .et_pb_section .et_pb_row .et_pb_column .et_pb_module:last-child {
+            text-align: left
+        }
+    }
+}

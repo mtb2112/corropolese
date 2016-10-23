@@ -154,6 +154,7 @@ nav#top-menu-nav {
                 text-transform: uppercase;
                 padding: 0;
                 margin-right: 48px;
+                font-size: 1.7rem;
 
                 &:hover {
                     background: transparent;
@@ -304,6 +305,10 @@ nav#top-menu-nav {
 }
 
 @media only screen and (max-width : 600px) {
+    #main-header {
+        margin-bottom: 20px;
+    }
+
     #top-menu-nav {
         position: absolute;
         top: -10px;
