@@ -54,6 +54,34 @@
     }
 }
 
+.et_pb_section {
+    &.item-listing-wrap:last-child {
+        margin-bottom: 54px;
+    }
+}
+
+.fa-5x {
+    font-size: 3rem;
+}
+
+.et_pb_gutters3 {
+    .et_pb_column_1_4 {
+        width: 34.875%;
+    }
+
+    .et_pb_column_3_4 {
+        width: 59.625%;
+    }
+}
+
+.bread-slider,
+.tomato-pie-slider,
+.rolls-slider {
+    .slider-subheading {
+        color: $green;
+    }
+}
+
 @media only screen and (max-width: $screen__xl) {
     .container {
         padding: 0 30px;

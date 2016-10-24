@@ -1,0 +1,97 @@
+.price-table {
+    .tablepress {
+        margin-top: 15px;
+        border: 0;
+        width: 550px;
+
+        &-table {
+            &-name {
+                color: $red;
+                font-size: 2.6rem;
+                font-family: $proximanova-black;
+                margin-bottom: 5px;
+            }
+
+            &-description {
+                color: $black;
+                font-size: 1.4rem;
+                font-family: $proximanova-black;
+            }
+        }
+    }
+
+    .row-1 {
+        td {
+            color: $red;
+            font-size: 2rem;
+            font-family: $proximanova-bold;
+        }
+    }
+}
+
+.entry-content {
+    tr {
+        td {
+            padding: 0;
+        }
+    }
+}
+
+.allergy-info {
+    h2,
+    p {
+        font-family: $proximanova-regular;
+        color: $black;
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+}
+
+.table-highlight {
+    .row-1 {
+        td {
+            text-align: center;
+        }
+    }
+    .row-2 {
+        background: $black;
+        color: $white;
+
+        td {
+            text-align: center;
+            color: $green-highlight;
+            font-size: 1.5rem;
+            padding: 8px 18px;
+            border-right: 3px solid $white;
+            font-family: $proximanova-bold;
+        }
+    }
+}
+
+@media only screen and (max-width: $screen__l) {
+    .price-table {
+        text-align: center;
+
+        .tablepress {
+            width: 100%;
+
+            tr {
+                td {
+                    text-align: center;
+                }
+            }
+
+            &-table-name {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .allergy-info {
+        text-align: center;
+    }
+}
