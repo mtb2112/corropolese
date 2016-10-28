@@ -1,0 +1,135 @@
+#wpsl {
+    &-result-list {
+        li {
+            p {
+                margin: 0;
+                font-size: 1.8rem;
+                font-family: $proximanova-regular;
+                color: $black;
+
+                & > strong {
+                    color: $red;
+                    font-family: $proximanova-bold;
+                }
+            }
+        }
+
+        a {
+            font-size: 1.2rem;
+        }
+    }
+
+    &-search-wrap {
+        .wpsl {
+            &-input {
+                label {
+                    margin-right: 0;
+                    font-size: 1.6rem;
+                    color: $black;
+                    text-transform: uppercase;
+                    font-family: $proximanova-bold;
+                }
+            }
+        }
+
+        div {
+            label {
+                width: auto;
+            }
+        }
+
+        input {
+            font-size: 1.2rem;
+        }
+    }
+
+    &-wrap {
+        .wpsl {
+            &-info-window {
+                p {
+                    font-size: 1.8rem;
+                    color: $black;
+
+                    strong {
+                        margin-bottom: 10px;
+                        display: block;
+                        color: $red;
+                        font-family: $proximanova-bold;
+                    }
+                }
+
+                span {
+                    margin-bottom: 3px;
+
+                    strong {
+                        font-size: 1.2rem;
+                        color: $black;
+                    }
+                }
+
+                & > span {
+                    font-size: 1.2rem;
+                    color: $black;
+                }
+
+                .wpsl-directions {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+.wpsl {
+    &-direction-wrap {
+        font-size: 1.2rem;
+        color: $black;
+    }
+
+    &-opening-hours {
+        tr {
+            td {
+                font-size: 1.2rem;
+                color: $black;
+            }
+        }
+
+        time {
+            font-size: 1.2rem;
+            color: $black;
+            padding-left: 10px;
+        }
+    }
+
+    &-store-location {
+        strong {
+            font-size: 1.2rem;
+        }
+    }
+
+    &-input {
+        label {
+            width: auto;
+        }
+    }
+}
+
+.et_pb_section {
+    &.find-a-store {
+        &-wrap {
+            padding: 0;
+        }
+    }
+}
+
+.gm-style-iw {
+    & > div {
+        & > div {
+            overflow: hidden !important;
+        }
+    }
+}
+
+.dojodigital_toggle_title {
+    font-size: 1.3rem;
+}
