@@ -403,7 +403,7 @@ nav#top-menu-nav {
 }
 /* line 182, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-flyout ul.mega-sub-menu {
-  width: 150%;
+  width: 200%;
 }
 /* line 185, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
