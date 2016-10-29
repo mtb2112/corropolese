@@ -1,0 +1,140 @@
+.contact-us-form {
+    label {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    input,
+    textarea {
+        margin-top: 5px;
+        padding: 12px;
+        font-size: 1.4rem;
+
+        &.wpcf7-submit {
+            background: transparent;
+        }
+    }
+
+    input,
+    textarea {
+        background: lighten($lt-gray, 10%);
+        transition: background 0.3s ease;
+
+        &:focus {
+            background: $white;
+        }
+    }
+
+    &-wrap {
+        &.et_pb_section {
+            padding-top: 0;
+        }
+    }
+
+    .wpcf7-form {
+        p {
+            display: inline-block;
+
+            &:nth-of-type(3),
+            &:nth-of-type(4) {
+                display: block;
+            }
+
+            &:nth-of-type(1) {
+                float: left;
+            }
+
+            &:nth-of-type(2) {
+                float: right;
+            }
+
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                width: 49%;
+
+                input,
+                label {
+                    width: 100%;
+                }
+            }
+
+            &:nth-of-type(3) {
+                input,
+                label {
+                    width: 100%;
+                }
+            }
+
+            &:nth-of-type(5) {
+                width: 100%;
+                text-align: center;
+            }
+
+            &:nth-of-type(4) {
+                textarea,
+                label {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .wpcf7-submit {
+        border: 2px solid $black;
+        color: $black;
+        font-family: $proximanova-bold;
+        border-radius: 3px;
+        font-size: 2rem;
+        padding: 10px 20px;
+        position: relative;
+        background: transparent;
+        transition: background 0.3s ease;
+
+        &:hover {
+            cursor: pointer;
+            background: lighten($lt-gray, 10%);
+        }
+    }
+
+    .wpcf7-not-valid-tip {
+        font-family: $proximanova-bold;
+        font-size: 1.6rem;
+        margin-top: 10px;
+    }
+
+    .wpcf7-validation-errors {
+        border-color: #f00;
+        font-size: 1.6rem;
+        padding: 20px;
+        color: #f00;
+        font-family: $proximanova-bold;
+    }
+
+    .wpcf7-mail-sent-ok {
+        padding: 20px;
+        font-size: 1.6rem;
+        color: #398f14;
+        font-family: $proximanova-bold;
+    }
+}
+
+@media only screen and (max-width: $screen__xs) {
+    .contact-us-form {
+        .wpcf7-form  {
+            p {
+                display: block;
+
+                &:nth-of-type(1),
+                &:nth-of-type(2) {
+                    width: 100%;
+                    float: none;
+                }
+            }
+        }
+    }
+}

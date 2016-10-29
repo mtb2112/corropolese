@@ -108,12 +108,16 @@ table {
   padding-top: 0 !important;
 }
 
-/* line 7, sass/_partials/_common.scss */
+/* line 5, sass/_partials/_common.scss */
+#main-content {
+  margin-bottom: 100px;
+}
+/* line 8, sass/_partials/_common.scss */
 #main-content .container:before {
   display: none;
 }
 
-/* line 13, sass/_partials/_common.scss */
+/* line 14, sass/_partials/_common.scss */
 .slider-text {
   font-family: "Proximanova Black";
   text-align: left;
@@ -125,60 +129,60 @@ table {
   padding: 6px 20px;
 }
 
-/* line 24, sass/_partials/_common.scss */
+/* line 25, sass/_partials/_common.scss */
 .et_pb_slide_description {
   padding: 16% 0;
   float: left;
 }
 
-/* line 29, sass/_partials/_common.scss */
+/* line 30, sass/_partials/_common.scss */
 .et_pb_more_button {
   float: left;
   font-family: "Proximanova Bold";
 }
 
-/* line 35, sass/_partials/_common.scss */
+/* line 36, sass/_partials/_common.scss */
 .page-heading h1,
 .page-heading p {
   color: #000000;
 }
-/* line 40, sass/_partials/_common.scss */
+/* line 41, sass/_partials/_common.scss */
 .page-heading h1 {
   font-size: 5rem;
   text-transform: uppercase;
   font-family: "Proximanova Black";
   margin-bottom: 10px;
 }
-/* line 47, sass/_partials/_common.scss */
+/* line 48, sass/_partials/_common.scss */
 .page-heading p {
   font-size: 1.6rem;
   font-family: "Proximanova Bold";
 }
-/* line 52, sass/_partials/_common.scss */
+/* line 53, sass/_partials/_common.scss */
 .page-heading.et_pb_section {
   padding-bottom: 0;
 }
 
-/* line 58, sass/_partials/_common.scss */
+/* line 59, sass/_partials/_common.scss */
 .et_pb_section.item-listing-wrap:last-child {
   margin-bottom: 54px;
 }
 
-/* line 63, sass/_partials/_common.scss */
+/* line 64, sass/_partials/_common.scss */
 .fa-5x {
   font-size: 3rem;
 }
 
-/* line 68, sass/_partials/_common.scss */
+/* line 69, sass/_partials/_common.scss */
 .et_pb_gutters3 .et_pb_column_1_4 {
   width: 34.875%;
 }
-/* line 72, sass/_partials/_common.scss */
+/* line 73, sass/_partials/_common.scss */
 .et_pb_gutters3 .et_pb_column_3_4 {
   width: 59.625%;
 }
 
-/* line 80, sass/_partials/_common.scss */
+/* line 81, sass/_partials/_common.scss */
 .bread-slider .slider-subheading,
 .tomato-pie-slider .slider-subheading,
 .rolls-slider .slider-subheading {
@@ -186,47 +190,47 @@ table {
 }
 
 @media only screen and (max-width: 1180px) {
-  /* line 86, sass/_partials/_common.scss */
+  /* line 87, sass/_partials/_common.scss */
   .container {
     padding: 0 30px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 92, sass/_partials/_common.scss */
+  /* line 93, sass/_partials/_common.scss */
   .slider-text {
     font-size: 6rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 98, sass/_partials/_common.scss */
+  /* line 99, sass/_partials/_common.scss */
   .slider-text {
     font-size: 4.5rem;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 104, sass/_partials/_common.scss */
+  /* line 105, sass/_partials/_common.scss */
   .slider-text {
     font-size: 3.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 110, sass/_partials/_common.scss */
+  /* line 111, sass/_partials/_common.scss */
   .slider-text {
     font-size: 2.7rem;
     padding: 3px 8px;
   }
 
-  /* line 116, sass/_partials/_common.scss */
+  /* line 117, sass/_partials/_common.scss */
   .et_pb_slider .et_pb_container {
     margin: 0;
   }
 
-  /* line 121, sass/_partials/_common.scss */
+  /* line 122, sass/_partials/_common.scss */
   .et_pb_button {
     font-size: 1.4rem;
   }
 
-  /* line 125, sass/_partials/_common.scss */
+  /* line 126, sass/_partials/_common.scss */
   .et_pb_more_button {
     margin-top: 5px;
   }
@@ -397,73 +401,78 @@ nav#top-menu-nav {
   background: transparent;
   color: #7b0000;
 }
-/* line 184, sass/_partials/_header.scss */
+/* line 182, sass/_partials/_header.scss */
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-flyout ul.mega-sub-menu {
+  width: 150%;
+}
+/* line 185, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
   background: #430000;
   color: #ffffff;
   margin: 1px 0;
   transition: background-color 0.3s ease;
+  text-transform: uppercase;
 }
-/* line 190, sass/_partials/_header.scss */
+/* line 192, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover {
   background: #7b0000;
   color: #ffffff;
 }
 
-/* line 201, sass/_partials/_header.scss */
+/* line 203, sass/_partials/_header.scss */
 #main-content .container {
   padding-top: 0;
 }
 
 @media only screen and (max-width: 1180px) {
-  /* line 208, sass/_partials/_header.scss */
+  /* line 210, sass/_partials/_header.scss */
   .et_header_style_left #et-top-navigation {
     width: 53%;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 215, sass/_partials/_header.scss */
+  /* line 217, sass/_partials/_header.scss */
   #et-secondary-menu,
   #et-secondary-nav {
     display: block !important;
     float: right;
   }
 
-  /* line 221, sass/_partials/_header.scss */
+  /* line 223, sass/_partials/_header.scss */
   #et-secondary-nav {
     float: right;
   }
 
-  /* line 226, sass/_partials/_header.scss */
+  /* line 228, sass/_partials/_header.scss */
   #main-header .et_search_outer {
     margin-top: 5px;
   }
-  /* line 230, sass/_partials/_header.scss */
+  /* line 232, sass/_partials/_header.scss */
   #main-header .et-search-form {
     float: right;
     max-width: 100% !important;
     width: 100% !important;
   }
-  /* line 236, sass/_partials/_header.scss */
+  /* line 238, sass/_partials/_header.scss */
   #main-header .et-search-field {
     margin-left: 0;
   }
-  /* line 240, sass/_partials/_header.scss */
+  /* line 242, sass/_partials/_header.scss */
   #main-header .searchsubmit {
     width: 14.3%;
   }
 
-  /* line 248, sass/_partials/_header.scss */
+  /* line 250, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link {
     margin-right: 24px;
   }
-  /* line 253, sass/_partials/_header.scss */
+  /* line 255, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item:last-child > a.mega-menu-link {
     margin-right: 0;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 264, sass/_partials/_header.scss */
+  /* line 266, sass/_partials/_header.scss */
   .et_header_style_left .logo_container {
     position: absolute;
     top: 20px;
@@ -474,7 +483,7 @@ nav#top-menu-nav {
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 277, sass/_partials/_header.scss */
+  /* line 279, sass/_partials/_header.scss */
   .et_header_style_left .logo_container {
     position: relative;
     width: 100%;
@@ -484,34 +493,34 @@ nav#top-menu-nav {
     top: inherit;
     margin-top: 20px;
   }
-  /* line 287, sass/_partials/_header.scss */
+  /* line 289, sass/_partials/_header.scss */
   .et_header_style_left #et-top-navigation {
     width: 100%;
     margin-top: 20px;
   }
-  /* line 292, sass/_partials/_header.scss */
+  /* line 294, sass/_partials/_header.scss */
   .et_header_style_left #et-secondary-menu {
     width: 100%;
   }
-  /* line 296, sass/_partials/_header.scss */
+  /* line 298, sass/_partials/_header.scss */
   .et_header_style_left #et-secondary-nav {
     float: left;
     width: 50%;
   }
 
-  /* line 303, sass/_partials/_header.scss */
+  /* line 305, sass/_partials/_header.scss */
   #main-header .et_search_outer {
     width: 50%;
     margin-top: 0;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 311, sass/_partials/_header.scss */
+  /* line 313, sass/_partials/_header.scss */
   #main-header {
     margin-bottom: 20px;
   }
 
-  /* line 315, sass/_partials/_header.scss */
+  /* line 317, sass/_partials/_header.scss */
   #top-menu-nav {
     position: absolute;
     top: -10px;
@@ -520,21 +529,21 @@ nav#top-menu-nav {
     z-index: 9999;
   }
 
-  /* line 324, sass/_partials/_header.scss */
+  /* line 326, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu .mega-menu-toggle {
     background: #d5d5d5;
     border-radius: 0;
     width: 37px;
   }
-  /* line 330, sass/_partials/_header.scss */
+  /* line 332, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-1:after {
     content: '';
   }
-  /* line 337, sass/_partials/_header.scss */
+  /* line 339, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu .mega-menu-toggle.mega-menu-open .mega-toggle-block-1:after {
     content: '';
   }
-  /* line 346, sass/_partials/_header.scss */
+  /* line 348, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link {
     background: #7b0000;
     color: #ffffff;
@@ -543,38 +552,46 @@ nav#top-menu-nav {
     border-bottom: 1px solid #ffffff;
     margin-right: 0;
   }
-  /* line 356, sass/_partials/_header.scss */
+  /* line 358, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item.mega-toggle-on a.mega-menu-link {
     background: #7b0000;
     color: #ffffff;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 368, sass/_partials/_header.scss */
+  /* line 370, sass/_partials/_header.scss */
   .et_header_style_left #et-secondary-nav {
     float: none;
     margin-left: 25px;
     width: inherit;
   }
 
-  /* line 376, sass/_partials/_header.scss */
+  /* line 378, sass/_partials/_header.scss */
   #main-header .et_search_outer {
     float: none;
     width: 100%;
     margin-top: 10px;
   }
 
-  /* line 384, sass/_partials/_header.scss */
+  /* line 386, sass/_partials/_header.scss */
   .et_header_style_left .logo_container {
     transform: scale(0.8, 0.8);
   }
 }
 /* line 1, sass/_partials/_footer.scss */
+#main-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+/* line 8, sass/_partials/_footer.scss */
 #footer-bottom {
   padding: 10px 0;
   background-color: #7b0000;
 }
-/* line 5, sass/_partials/_footer.scss */
+/* line 12, sass/_partials/_footer.scss */
 #footer-bottom #footer-info {
   color: #ffffff;
   padding-bottom: 0;
@@ -582,7 +599,7 @@ nav#top-menu-nav {
   line-height: 2.5rem;
 }
 
-/* line 14, sass/_partials/_footer.scss */
+/* line 21, sass/_partials/_footer.scss */
 .et-social-icon a {
   color: #ffffff;
 }
@@ -627,75 +644,73 @@ nav#top-menu-nav {
   color: #d13737;
   font-family: "Proximanova Bold";
 }
-/* line 43, sass/_partials/_home.scss */
+/* line 42, sass/_partials/_home.scss */
+.home.page .instagram-feed-wrap {
+  margin-top: 50px;
+}
+/* line 44, sass/_partials/_home.scss */
 .home.page .instagram-feed-wrap .et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content {
   width: auto;
   max-width: 100%;
 }
 /* line 50, sass/_partials/_home.scss */
-.home.page .follow-heading h1 {
-  font-size: 5rem;
-  font-family: "Proximanova Black";
-  color: #000000;
-  text-transform: uppercase;
-  margin-bottom: 15px;
+.home.page .follow-heading {
+  margin-top: 90px;
 }
-/* line 58, sass/_partials/_home.scss */
-.home.page .follow-heading p {
-  font-family: "Proximanova Black";
-  color: #000000;
-  font-size: 1.6rem;
-}
-/* line 65, sass/_partials/_home.scss */
+/* line 54, sass/_partials/_home.scss */
 .home.page .instagram-feed-button-wrap {
   margin: 30px 0;
 }
-/* line 70, sass/_partials/_home.scss */
+/* line 59, sass/_partials/_home.scss */
 .home.page .instagram-follow-button.et_pb_button {
   border-color: #000000;
   color: #000000;
 }
-/* line 76, sass/_partials/_home.scss */
+/* line 65, sass/_partials/_home.scss */
 .home.page .social-buttons-list {
   display: inline-block;
 }
-/* line 79, sass/_partials/_home.scss */
+/* line 68, sass/_partials/_home.scss */
 .home.page .social-buttons-list a {
   background-color: #000000 !important;
 }
-/* line 84, sass/_partials/_home.scss */
+/* line 73, sass/_partials/_home.scss */
 .home.page .social-links-wrap {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 90, sass/_partials/_home.scss */
+/* line 79, sass/_partials/_home.scss */
 .home.page .et_pb_social_media_follow li a.icon {
   width: 64px;
   height: 64px;
   overflow: hidden;
 }
-/* line 95, sass/_partials/_home.scss */
+/* line 84, sass/_partials/_home.scss */
 .home.page .et_pb_social_media_follow li a.icon:before {
   width: 64px;
   height: 64px;
   padding-top: 15px;
   font-size: 3.6rem;
 }
+/* line 91, sass/_partials/_home.scss */
+.home.page .et_pb_social_media_follow li a.icon.rounded_rectangle {
+  border-radius: 0;
+}
 
 @media only screen and (max-width: 1180px) {
-  /* line 107, sass/_partials/_home.scss */
+  /* line 100, sass/_partials/_home.scss */
   .home.page .et_pb_section .et_pb_row .et_pb_column .et_pb_module:last-child {
     margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 114, sass/_partials/_home.scss */
+  /* line 107, sass/_partials/_home.scss */
   .et_pb_column {
     margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 121, sass/_partials/_home.scss */
+  /* line 114, sass/_partials/_home.scss */
   .home.page .et_pb_section .et_pb_row .et_pb_column .et_pb_module:last-child {
     text-align: left;
   }
@@ -867,7 +882,7 @@ nav#top-menu-nav {
 }
 /* line 105, sass/_partials/_store-locator.scss */
 .wpsl-store-location strong {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 /* line 111, sass/_partials/_store-locator.scss */
 .wpsl-input label {
@@ -886,5 +901,134 @@ nav#top-menu-nav {
 
 /* line 133, sass/_partials/_store-locator.scss */
 .dojodigital_toggle_title {
-  font-size: 1.3rem;
+  font-size: inherit;
+}
+
+/* line 2, sass/_partials/_contact-us.scss */
+.contact-us-form label {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+/* line 8, sass/_partials/_contact-us.scss */
+.contact-us-form textarea {
+  resize: vertical;
+}
+/* line 12, sass/_partials/_contact-us.scss */
+.contact-us-form input,
+.contact-us-form textarea {
+  margin-top: 5px;
+  padding: 12px;
+  font-size: 1.4rem;
+}
+/* line 18, sass/_partials/_contact-us.scss */
+.contact-us-form input.wpcf7-submit,
+.contact-us-form textarea.wpcf7-submit {
+  background: transparent;
+}
+/* line 23, sass/_partials/_contact-us.scss */
+.contact-us-form input,
+.contact-us-form textarea {
+  background: #efefef;
+  transition: background 0.3s ease;
+}
+/* line 28, sass/_partials/_contact-us.scss */
+.contact-us-form input:focus,
+.contact-us-form textarea:focus {
+  background: #ffffff;
+}
+/* line 34, sass/_partials/_contact-us.scss */
+.contact-us-form-wrap.et_pb_section {
+  padding-top: 0;
+}
+/* line 40, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-form p {
+  display: inline-block;
+}
+/* line 43, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-form p:nth-of-type(3), .contact-us-form .wpcf7-form p:nth-of-type(4) {
+  display: block;
+}
+/* line 48, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-form p:nth-of-type(1) {
+  float: left;
+}
+/* line 52, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-form p:nth-of-type(2) {
+  float: right;
+}
+/* line 56, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-form p:nth-of-type(1), .contact-us-form .wpcf7-form p:nth-of-type(2) {
+  width: 49%;
+}
+/* line 60, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-form p:nth-of-type(1) input,
+.contact-us-form .wpcf7-form p:nth-of-type(1) label, .contact-us-form .wpcf7-form p:nth-of-type(2) input,
+.contact-us-form .wpcf7-form p:nth-of-type(2) label {
+  width: 100%;
+}
+/* line 67, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-form p:nth-of-type(3) input,
+.contact-us-form .wpcf7-form p:nth-of-type(3) label {
+  width: 100%;
+}
+/* line 73, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-form p:nth-of-type(5) {
+  width: 100%;
+  text-align: center;
+}
+/* line 79, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-form p:nth-of-type(4) textarea,
+.contact-us-form .wpcf7-form p:nth-of-type(4) label {
+  width: 100%;
+}
+/* line 87, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-submit {
+  border: 2px solid #000000;
+  color: #000000;
+  font-family: "Proximanova Bold";
+  border-radius: 3px;
+  font-size: 2rem;
+  padding: 10px 20px;
+  position: relative;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+/* line 98, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-submit:hover {
+  cursor: pointer;
+  background: #efefef;
+}
+/* line 104, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-not-valid-tip {
+  font-family: "Proximanova Bold";
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+/* line 110, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-validation-errors {
+  border-color: #f00;
+  font-size: 1.6rem;
+  padding: 20px;
+  color: #f00;
+  font-family: "Proximanova Bold";
+}
+/* line 118, sass/_partials/_contact-us.scss */
+.contact-us-form .wpcf7-mail-sent-ok {
+  padding: 20px;
+  font-size: 1.6rem;
+  color: #398f14;
+  font-family: "Proximanova Bold";
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 129, sass/_partials/_contact-us.scss */
+  .contact-us-form .wpcf7-form p {
+    display: block;
+  }
+  /* line 132, sass/_partials/_contact-us.scss */
+  .contact-us-form .wpcf7-form p:nth-of-type(1), .contact-us-form .wpcf7-form p:nth-of-type(2) {
+    width: 100%;
+    float: none;
+  }
 }

@@ -180,12 +180,14 @@ nav#top-menu-nav {
         }
 
         & > li.mega-menu-flyout ul.mega-sub-menu {
+            width: 150%;
             li.mega-menu-item {
                 a.mega-menu-link {
                     background: $dk-red;
                     color: $white;
                     margin: 1px 0;
                     transition: background-color 0.3s ease;
+                    text-transform: uppercase;
 
                     &:hover {
                         background: $red;
