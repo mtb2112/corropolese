@@ -77,9 +77,18 @@
 
 .bread-slider,
 .tomato-pie-slider,
-.rolls-slider {
+.rolls-slider,
+.party-favorites-slider {
     .slider-subheading {
         color: $green;
+    }
+}
+
+.section-heading {
+    h2 {
+        font-size: 3rem;
+        font-family: $proximanova-black;
+        text-transform: uppercase;
     }
 }
 

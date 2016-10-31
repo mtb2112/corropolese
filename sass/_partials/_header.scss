@@ -180,7 +180,6 @@ nav#top-menu-nav {
         }
 
         & > li.mega-menu-flyout ul.mega-sub-menu {
-            width: 200%;
             li.mega-menu-item {
                 a.mega-menu-link {
                     background: $dk-red;
@@ -189,9 +188,60 @@ nav#top-menu-nav {
                     transition: background-color 0.3s ease;
                     text-transform: uppercase;
 
-                    &:hover {
+                    &:hover,
+                    &:focus {
                         background: $red;
                         color: $white;
+                    }
+                }
+            }
+        }
+
+        .mega-menu-item-58.mega-menu-flyout {
+            & > .mega-sub-menu {
+                width: 170px;
+            }
+        }
+
+        .mega-menu-item-57.mega-menu-flyout {
+            & > .mega-sub-menu {
+                width: 190px;
+            }
+        }
+
+        .mega-menu-item-55.mega-menu-flyout {
+            & > .mega-sub-menu {
+                width: 160px;
+                margin-right: 47px;
+            }
+
+            &.mega-align-bottom-right {
+                .mega-menu-item.mega-menu-item-360 {
+                    & > .mega-sub-menu {
+                        width: 315px;
+                        left: -315px;
+                        top: -1px;
+                    }
+                }
+            }
+
+            &.mega-align-bottom-right {
+                .mega-menu-item.mega-menu-item-361 {
+                    & > .mega-sub-menu {
+                        width: 170px;
+                        left: -170px;
+                        top: -1px;
+                    }
+                }
+            }
+
+            &.mega-align-bottom-right {
+                .mega-menu-item.mega-menu-item-362,
+                .mega-menu-item.mega-menu-item-363 {
+                    & > .mega-sub-menu {
+                        width: 170px;
+                        left: -170px;
+                        top: -1px;
                     }
                 }
             }
@@ -352,12 +402,37 @@ nav#top-menu-nav {
                     padding-right: 20px;
                     border-bottom: 1px solid $white;
                     margin-right: 0;
+
+                    &:hover,
+                    &:focus {
+                        background: $red;
+                        color: $white;
+                    }
                 }
 
                 &.mega-toggle-on {
                     a.mega-menu-link {
                         background: $red;
                         color: $white;
+                    }
+                }
+            }
+
+            .mega-menu-item-58.mega-menu-flyout,
+            .mega-menu-item-57.mega-menu-flyout,
+            .mega-menu-item-55.mega-menu-flyout {
+                & > .mega-sub-menu {
+                    width: 100%;
+                }
+            }
+
+            .mega-menu-item-55.mega-menu-flyout.mega-align-bottom-right {
+                .mega-menu-item.mega-menu-item-360,
+                .mega-menu-item.mega-menu-item-361,
+                .mega-menu-item.mega-menu-item-362,
+                .mega-menu-item.mega-menu-item-363 {
+                    & > .mega-sub-menu {
+                        width: 100%
                     }
                 }
             }

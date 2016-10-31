@@ -27,6 +27,48 @@
             font-family: $proximanova-bold;
         }
     }
+
+    &.tray-table {
+        .tablepress {
+            tbody {
+                td {
+                    border: 0;
+                    padding: 3px 0;
+                }
+            }
+        }
+        .row-1 {
+
+            &:hover {
+                background: transparent;
+            }
+            td {
+                font-size: 2rem;
+                color: $red;
+            }
+
+            .column-2,
+            .column-3,
+            .column-4 {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+        }
+
+        tr {
+            background: transparent;
+            transition: background 0.3s ease;
+
+            &:hover {
+                background: lighten($lt-gray, 10%);
+                cursor: default;
+            }
+            td {
+                font-size: 1.4rem;
+                color: $black;
+            }
+        }
+    }
 }
 
 .entry-content {
@@ -72,6 +114,16 @@
     }
 }
 
+.table-hot-sandwiches {
+    .row-3 {
+        td {
+            text-align: right;
+            font-size: 1.2rem;
+            color: $black;
+        }
+    }
+}
+
 @media only screen and (max-width: $screen__l) {
     .price-table {
         text-align: center;
@@ -93,5 +145,27 @@
 
     .allergy-info {
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: $screen__xs) {
+    .price-table {
+        &.table-hoagie-tray {
+            .row-1 {
+                td {
+                    font-size: 1.6rem
+                }
+            }
+        }
+    }
+
+    .table-highlight {
+        &.table-hoagie-tray {
+            .row-2 {
+                td {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 }
