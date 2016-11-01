@@ -155,13 +155,13 @@ nav#top-menu-nav {
                 padding: 0;
                 margin-right: 48px;
                 font-size: 1.7rem;
-                font-weight: 600;
+                font-weight: 600 !important;
 
                 &:hover,
                 &:focus {
                     background: transparent;
                     color: $red;
-                    font-weight: 600;
+                    font-weight: 600 !important;
                 }
             }
 

@@ -117,7 +117,7 @@ table {
   display: none;
 }
 
-/* line 14, sass/_partials/_common.scss */
+/* line 15, sass/_partials/_common.scss */
 .slider-text {
   font-family: "Proximanova Black";
   text-align: left;
@@ -128,69 +128,71 @@ table {
   margin-bottom: 10px;
   padding: 6px 20px;
 }
+/* line 26, sass/_partials/_common.scss */
+.slider-subheading {
+  font-family: "Proximanova Regular";
+  font-size: 2.5rem;
+}
 
-/* line 25, sass/_partials/_common.scss */
+/* line 33, sass/_partials/_common.scss */
+.et_pb_slide_content p:last-of-type {
+  padding-bottom: 6px;
+}
+
+/* line 38, sass/_partials/_common.scss */
 .et_pb_slide_description {
   padding: 16% 0;
   float: left;
 }
 
-/* line 30, sass/_partials/_common.scss */
+/* line 43, sass/_partials/_common.scss */
 .et_pb_more_button {
   float: left;
   font-family: "Proximanova Bold";
 }
 
-/* line 36, sass/_partials/_common.scss */
+/* line 49, sass/_partials/_common.scss */
 .page-heading h1,
 .page-heading p {
   color: #000000;
 }
-/* line 41, sass/_partials/_common.scss */
+/* line 54, sass/_partials/_common.scss */
 .page-heading h1 {
   font-size: 5rem;
   text-transform: uppercase;
   font-family: "Proximanova Black";
   margin-bottom: 10px;
 }
-/* line 48, sass/_partials/_common.scss */
+/* line 61, sass/_partials/_common.scss */
 .page-heading p {
   font-size: 1.6rem;
   font-family: "Proximanova Bold";
 }
-/* line 53, sass/_partials/_common.scss */
+/* line 66, sass/_partials/_common.scss */
 .page-heading.et_pb_section {
   padding-bottom: 0;
 }
 
-/* line 59, sass/_partials/_common.scss */
+/* line 72, sass/_partials/_common.scss */
 .et_pb_section.item-listing-wrap:last-child {
   margin-bottom: 54px;
 }
 
-/* line 64, sass/_partials/_common.scss */
+/* line 77, sass/_partials/_common.scss */
 .fa-5x {
   font-size: 3rem;
 }
 
-/* line 69, sass/_partials/_common.scss */
+/* line 82, sass/_partials/_common.scss */
 .et_pb_gutters3 .et_pb_column_1_4 {
   width: 34.875%;
 }
-/* line 73, sass/_partials/_common.scss */
+/* line 86, sass/_partials/_common.scss */
 .et_pb_gutters3 .et_pb_column_3_4 {
   width: 59.625%;
 }
 
-/* line 82, sass/_partials/_common.scss */
-.bread-slider .slider-subheading,
-.tomato-pie-slider .slider-subheading,
-.rolls-slider .slider-subheading,
-.party-favorites-slider .slider-subheading {
-  color: #007b5a;
-}
-
-/* line 88, sass/_partials/_common.scss */
+/* line 92, sass/_partials/_common.scss */
 .section-heading h2 {
   font-size: 3rem;
   font-family: "Proximanova Black";
@@ -198,47 +200,47 @@ table {
 }
 
 @media only screen and (max-width: 1180px) {
-  /* line 96, sass/_partials/_common.scss */
+  /* line 100, sass/_partials/_common.scss */
   .container {
     padding: 0 30px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 102, sass/_partials/_common.scss */
+  /* line 106, sass/_partials/_common.scss */
   .slider-text {
     font-size: 6rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 108, sass/_partials/_common.scss */
+  /* line 112, sass/_partials/_common.scss */
   .slider-text {
     font-size: 4.5rem;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 114, sass/_partials/_common.scss */
+  /* line 118, sass/_partials/_common.scss */
   .slider-text {
     font-size: 3.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 120, sass/_partials/_common.scss */
+  /* line 124, sass/_partials/_common.scss */
   .slider-text {
     font-size: 2.7rem;
     padding: 3px 8px;
   }
 
-  /* line 126, sass/_partials/_common.scss */
+  /* line 130, sass/_partials/_common.scss */
   .et_pb_slider .et_pb_container {
     margin: 0;
   }
 
-  /* line 131, sass/_partials/_common.scss */
+  /* line 135, sass/_partials/_common.scss */
   .et_pb_button {
     font-size: 1.4rem;
   }
 
-  /* line 135, sass/_partials/_common.scss */
+  /* line 139, sass/_partials/_common.scss */
   .et_pb_more_button {
     margin-top: 5px;
   }
@@ -392,13 +394,13 @@ nav#top-menu-nav {
   padding: 0;
   margin-right: 48px;
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 /* line 160, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link:focus {
   background: transparent;
   color: #7b0000;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 /* line 169, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item:last-child a {
