@@ -413,8 +413,8 @@ nav#top-menu-nav {
 }
 /* line 184, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
-  background: #430000;
-  color: #ffffff;
+  background: #ffffff;
+  color: #430000;
   margin: 1px 0;
   transition: background-color 0.3s ease;
   text-transform: uppercase;
@@ -660,113 +660,109 @@ nav#top-menu-nav {
   color: #ffffff;
 }
 
-/* line 2, sass/_partials/_home.scss */
-.home.page .slider-subheading {
-  color: #d13737;
-}
-/* line 6, sass/_partials/_home.scss */
+/* line 3, sass/_partials/_home.scss */
 .home.page .et_pb_more_button {
   color: #d13737;
 }
-/* line 10, sass/_partials/_home.scss */
+/* line 7, sass/_partials/_home.scss */
 .home.page .et_pb_button {
   border-color: #d13737;
   font-family: "Proximanova Bold";
 }
-/* line 15, sass/_partials/_home.scss */
+/* line 12, sass/_partials/_home.scss */
 .home.page .et_pb_section,
 .home.page .et_pb_row {
   padding: 0;
 }
-/* line 20, sass/_partials/_home.scss */
+/* line 17, sass/_partials/_home.scss */
 .home.page .history {
   background-image: url("images/about-bg.jpg");
 }
-/* line 23, sass/_partials/_home.scss */
+/* line 20, sass/_partials/_home.scss */
 .home.page .history h1 {
   font-family: "Proximanova Black";
   font-size: 5rem;
   text-transform: uppercase;
   margin-top: 20px;
 }
-/* line 30, sass/_partials/_home.scss */
+/* line 27, sass/_partials/_home.scss */
 .home.page .history p {
   font-size: 1.6rem;
   font-family: "Proximanova Bold";
   line-height: 1.9rem;
 }
-/* line 36, sass/_partials/_home.scss */
+/* line 33, sass/_partials/_home.scss */
 .home.page .history .et_pb_button {
   color: #d13737;
   font-family: "Proximanova Bold";
 }
-/* line 42, sass/_partials/_home.scss */
+/* line 39, sass/_partials/_home.scss */
 .home.page .instagram-feed-wrap {
   margin-top: 50px;
 }
-/* line 44, sass/_partials/_home.scss */
+/* line 41, sass/_partials/_home.scss */
 .home.page .instagram-feed-wrap .et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content {
   width: auto;
   max-width: 100%;
 }
-/* line 50, sass/_partials/_home.scss */
+/* line 47, sass/_partials/_home.scss */
 .home.page .follow-heading {
   margin-top: 90px;
 }
-/* line 54, sass/_partials/_home.scss */
+/* line 51, sass/_partials/_home.scss */
 .home.page .instagram-feed-button-wrap {
   margin: 30px 0;
 }
-/* line 59, sass/_partials/_home.scss */
+/* line 56, sass/_partials/_home.scss */
 .home.page .instagram-follow-button.et_pb_button {
   border-color: #000000;
   color: #000000;
 }
-/* line 65, sass/_partials/_home.scss */
+/* line 62, sass/_partials/_home.scss */
 .home.page .social-buttons-list {
   display: inline-block;
 }
-/* line 68, sass/_partials/_home.scss */
+/* line 65, sass/_partials/_home.scss */
 .home.page .social-buttons-list a {
   background-color: #000000 !important;
 }
-/* line 73, sass/_partials/_home.scss */
+/* line 70, sass/_partials/_home.scss */
 .home.page .social-links-wrap {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 79, sass/_partials/_home.scss */
+/* line 76, sass/_partials/_home.scss */
 .home.page .et_pb_social_media_follow li a.icon {
   width: 64px;
   height: 64px;
   overflow: hidden;
 }
-/* line 84, sass/_partials/_home.scss */
+/* line 81, sass/_partials/_home.scss */
 .home.page .et_pb_social_media_follow li a.icon:before {
   width: 64px;
   height: 64px;
   padding-top: 15px;
   font-size: 3.6rem;
 }
-/* line 91, sass/_partials/_home.scss */
+/* line 88, sass/_partials/_home.scss */
 .home.page .et_pb_social_media_follow li a.icon.rounded_rectangle {
   border-radius: 0;
 }
 
 @media only screen and (max-width: 1180px) {
-  /* line 100, sass/_partials/_home.scss */
+  /* line 97, sass/_partials/_home.scss */
   .home.page .et_pb_section .et_pb_row .et_pb_column .et_pb_module:last-child {
     margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 107, sass/_partials/_home.scss */
+  /* line 104, sass/_partials/_home.scss */
   .et_pb_column {
     margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 114, sass/_partials/_home.scss */
+  /* line 111, sass/_partials/_home.scss */
   .home.page .et_pb_section .et_pb_row .et_pb_column .et_pb_module:last-child {
     text-align: left;
   }
