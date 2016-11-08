@@ -298,7 +298,7 @@ nav#top-menu-nav {
         #mega-menu-primary-menu {
             & > li.mega-menu-item {
                 & > a.mega-menu-link {
-                    margin-right: 24px;
+                    margin-right: 23px;
                 }
 
                 &:last-child {
@@ -394,8 +394,9 @@ nav#top-menu-nav {
         }
 
         #mega-menu-primary-menu {
-            & > li.mega-menu-item {
-                & > a.mega-menu-link {
+              li.mega-menu-item {
+                display: block;
+                a.mega-menu-link {
                     background: $red;
                     color: $white;
                     padding-left: 20px;
@@ -408,12 +409,35 @@ nav#top-menu-nav {
                         background: $red;
                         color: $white;
                     }
+
+                    &:before {
+                        font-family: $font-awesome;
+                    }
                 }
 
                 &.mega-toggle-on {
                     a.mega-menu-link {
                         background: $red;
                         color: $white;
+                    }
+
+                    &.mega-menu-item-has-children {
+                        & > a.mega-menu-link {
+                            &:before {
+                                content: '\f106';
+                            }
+                        }
+                    }
+                }
+
+                &.mega-menu-item-has-children {
+                    & > a.mega-menu-link {
+                        &:before {
+                            content: '\f107';
+                            position: absolute;
+                            right: 10px;
+                            font-family: $font-awesome;
+                        }
                     }
                 }
             }
@@ -434,6 +458,17 @@ nav#top-menu-nav {
                     & > .mega-sub-menu {
                         width: 100%
                     }
+                }
+            }
+        }
+    }
+
+    .mega-sub-menu {
+        li.mega-menu-item-has-children {
+            & > .mega-menu-link {
+                &:before {
+                    content: '\f107';
+                    font-family: $font-awesome;
                 }
             }
         }

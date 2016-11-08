@@ -112,15 +112,47 @@
             font-family: $proximanova-bold;
         }
     }
+
+    &.one-column {
+
+        .row-1 {
+            td {
+                text-align: left;
+            }
+        }
+        .tablepress {
+            width: 220px;
+        }
+    }
 }
 
 .table-hot-sandwiches {
+    .row-1 {
+        td {
+            text-align: left;
+            padding-bottom: 10px;
+        }
+    }
+
     .row-3 {
         td {
             text-align: right;
             font-size: 1.2rem;
             color: $black;
         }
+    }
+}
+
+.table-stromboli {
+    .tablepress {
+
+        .row-1 {
+            td {
+                text-align: left;
+                padding-bottom: 10px;
+            }
+        }
+        width: 350px;
     }
 }
 
@@ -145,6 +177,48 @@
 
     .allergy-info {
         text-align: center;
+    }
+
+    .table-highlight {
+        &.one-column {
+            .row-1 {
+                td {
+                    text-align: center;
+                }
+            }
+            .tablepress {
+                margin: 15px auto;
+            }
+        }
+    }
+
+    .table-hot-sandwiches {
+        .tablepress {
+            width: 50%;
+            margin: 15px auto;
+        }
+    }
+
+    .table-stromboli {
+        .tablepress {
+
+            .row-1 {
+                td {
+                    text-align: center;
+                }
+            }
+            width: 50%;
+            margin: 15px auto;
+        }
+    }
+}
+
+@media only screen and (max-width: $screen__m) {
+    .table-hot-sandwiches,
+    .table-stromboli {
+        .tablepress {
+            width: 100%;
+        }
     }
 }
 
