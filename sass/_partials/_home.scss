@@ -36,8 +36,11 @@
         }
     }
 
-    .instagram-feed-wrap {
+    .social-wrap {
         margin-top: 50px;
+    }
+
+    .instagram-feed-wrap {
         .et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content {
             width: auto;
             max-width: 100%;
@@ -52,10 +55,43 @@
         margin: 30px 0;
     }
 
-    .instagram-follow-button {
+    .instagram-follow-button,
+    .facebook-follow-button {
         &.et_pb_button {
             border-color: $black;
             color: $black;
+        }
+    }
+
+    .facebook {
+        &-feed-wrap {
+            padding: 10px;
+            border: 1px solid $red;
+            margin-top: 12px;
+            margin-bottom: 49px;
+
+            .cff-page-name {
+                padding: 0;
+                font-size: 1.8rem;
+            }
+
+            .cff-post-text {
+                color: $black;
+            }
+
+            .cff-text {
+                font-size: 1.4rem;
+
+                a {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .cff-media-link {
+                a {
+                    font-size: 1.4rem;
+                }
+            }
         }
     }
 
@@ -90,6 +126,17 @@
             }
         }
     }
+
+    .mCS-corropolese.mCSB_scrollTools {
+        .mCSB_dragger_bar {
+            background-color: $red;
+            width: 2px;
+        }
+
+        .mCSB_draggerRail {
+            background-color: transparent;
+        }
+    }
 }
 
 @media only screen and (max-width: $screen__xl) {
@@ -107,9 +154,5 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .home.page {
-        .et_pb_section .et_pb_row .et_pb_column .et_pb_module:last-child {
-            text-align: left
-        }
-    }
+
 }

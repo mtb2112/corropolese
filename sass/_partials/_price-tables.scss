@@ -69,6 +69,86 @@
             }
         }
     }
+
+    &.sandwiches-table {
+        tr {
+            background: transparent;
+            transition: background 0.3s ease;
+
+            &:hover {
+                background: lighten($lt-gray, 10%);
+                cursor: default;
+            }
+
+            td {
+                font-size: 1.4rem;
+                color: $black;
+            }
+
+            td.column-1 {
+                text-align: left;
+            }
+            td.column-2 {
+                text-align: right;
+                padding-right: 3px;
+            }
+        }
+
+        .tablepress {
+            width: 300px;
+
+            tbody {
+                td {
+                    border-top: 0;
+                    padding: 3px 0;
+                }
+            }
+        }
+
+        .row-1 {
+            td {
+                font-family: $site-font;
+            }
+        }
+    }
+
+    &.lunch-table {
+        .tablepress {
+            tr {
+                background: transparent;
+                transition: background 0.3s ease;
+
+                &:hover {
+                    background: lighten($lt-gray, 10%);
+                    cursor: default;
+                }
+                td {
+                    font-size: 1.4rem;
+                    color: $black;
+                    padding: 3px 0;
+                }
+
+                &.row-1 {
+                    .column-2,
+                    .column-3 {
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+                        color: $red;
+                    }
+
+                    &:hover {
+                        background: transparent;
+                    }
+                }
+            }
+
+            tbody {
+                td {
+                    border: 0;
+                }
+            }
+        }
+    }
 }
 
 .entry-content {
@@ -173,6 +253,13 @@
                 margin-top: 15px;
             }
         }
+
+        &.sandwiches-table {
+            .tablepress {
+                width: 50%;
+                margin: 15px auto;
+            }
+        }
     }
 
     .allergy-info {
@@ -239,6 +326,16 @@
                 td {
                     font-size: 1rem;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $screen__xxs) {
+    .price-table {
+        &.sandwiches-table {
+            .tablepress {
+                width: 100%;
             }
         }
     }

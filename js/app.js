@@ -1,8 +1,11 @@
 (function($){
 
     $(document).ready( function(){
-        var lastItem = $('.mega-menu-item-57 .mega-sub-menu li:gt(5)');
-        $(lastItem).hide;
+        $(window).on('load',function(){
+            $('#cff.cff-fixed-height').mCustomScrollbar({
+                theme: 'corropolese'
+            });
+        });
     });
 
 })(jQuery);
