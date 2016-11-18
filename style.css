@@ -162,87 +162,109 @@ table {
   text-transform: uppercase;
   font-family: "Proximanova Black";
   margin-bottom: 10px;
+  word-wrap: normal;
 }
-/* line 61, sass/_partials/_common.scss */
+/* line 62, sass/_partials/_common.scss */
 .page-heading p {
   font-size: 1.6rem;
   font-family: "Proximanova Bold";
 }
-/* line 66, sass/_partials/_common.scss */
+/* line 67, sass/_partials/_common.scss */
 .page-heading.et_pb_section {
   padding-bottom: 0;
 }
 
-/* line 72, sass/_partials/_common.scss */
+/* line 73, sass/_partials/_common.scss */
 .et_pb_section.item-listing-wrap:last-child {
   margin-bottom: 54px;
 }
 
-/* line 77, sass/_partials/_common.scss */
+/* line 78, sass/_partials/_common.scss */
 .fa-5x {
   font-size: 3rem;
 }
 
-/* line 82, sass/_partials/_common.scss */
+/* line 83, sass/_partials/_common.scss */
 .et_pb_gutters3 .et_pb_column_1_4 {
   width: 34.875%;
 }
-/* line 86, sass/_partials/_common.scss */
+/* line 87, sass/_partials/_common.scss */
 .et_pb_gutters3 .et_pb_column_3_4 {
   width: 59.625%;
 }
 
-/* line 92, sass/_partials/_common.scss */
+/* line 93, sass/_partials/_common.scss */
 .section-heading h2 {
   font-size: 3rem;
   font-family: "Proximanova Black";
   text-transform: uppercase;
 }
 
+/* line 100, sass/_partials/_common.scss */
+.et_pb_post {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+/* line 103, sass/_partials/_common.scss */
+.et_pb_post h2 {
+  font-size: 8rem;
+  line-height: 5rem;
+}
+/* line 106, sass/_partials/_common.scss */
+.et_pb_post h2 a {
+  font-family: "Proximanova Bold";
+  color: #7b0000;
+}
+
 @media only screen and (max-width: 1180px) {
-  /* line 100, sass/_partials/_common.scss */
+  /* line 114, sass/_partials/_common.scss */
   .container {
     padding: 0 30px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 106, sass/_partials/_common.scss */
+  /* line 120, sass/_partials/_common.scss */
   .slider-text {
     font-size: 6rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 112, sass/_partials/_common.scss */
+  /* line 126, sass/_partials/_common.scss */
   .slider-text {
     font-size: 4.5rem;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 118, sass/_partials/_common.scss */
+  /* line 132, sass/_partials/_common.scss */
   .slider-text {
     font-size: 3.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 124, sass/_partials/_common.scss */
+  /* line 138, sass/_partials/_common.scss */
   .slider-text {
     font-size: 2.7rem;
     padding: 3px 8px;
   }
 
-  /* line 130, sass/_partials/_common.scss */
+  /* line 144, sass/_partials/_common.scss */
   .et_pb_slider .et_pb_container {
     margin: 0;
   }
 
-  /* line 135, sass/_partials/_common.scss */
+  /* line 149, sass/_partials/_common.scss */
   .et_pb_button {
     font-size: 1.4rem;
   }
 
-  /* line 139, sass/_partials/_common.scss */
+  /* line 153, sass/_partials/_common.scss */
   .et_pb_more_button {
     margin-top: 5px;
+  }
+
+  /* line 158, sass/_partials/_common.scss */
+  .page-heading h1 {
+    font-size: 4rem;
   }
 }
 /* line 1, sass/_partials/_header.scss */
@@ -922,66 +944,67 @@ nav#top-menu-nav {
 .price-table.sandwiches-table .row-1 td {
   font-family: "Proximanova Regular", Arial, sans-serif;
 }
-/* line 117, sass/_partials/_price-tables.scss */
-.price-table.lunch-table .tablepress tr {
+/* line 118, sass/_partials/_price-tables.scss */
+.price-table.lunch-table .tablepress tr, .price-table.table-stromboli .tablepress tr {
   background: transparent;
   transition: background 0.3s ease;
 }
-/* line 121, sass/_partials/_price-tables.scss */
-.price-table.lunch-table .tablepress tr:hover {
+/* line 122, sass/_partials/_price-tables.scss */
+.price-table.lunch-table .tablepress tr:hover, .price-table.table-stromboli .tablepress tr:hover {
   background: #efefef;
   cursor: default;
 }
-/* line 125, sass/_partials/_price-tables.scss */
-.price-table.lunch-table .tablepress tr td {
+/* line 126, sass/_partials/_price-tables.scss */
+.price-table.lunch-table .tablepress tr td, .price-table.table-stromboli .tablepress tr td {
   font-size: 1.4rem;
   color: #000000;
   padding: 3px 0;
 }
-/* line 132, sass/_partials/_price-tables.scss */
+/* line 133, sass/_partials/_price-tables.scss */
 .price-table.lunch-table .tablepress tr.row-1 .column-2,
-.price-table.lunch-table .tablepress tr.row-1 .column-3 {
+.price-table.lunch-table .tablepress tr.row-1 .column-3, .price-table.table-stromboli .tablepress tr.row-1 .column-2,
+.price-table.table-stromboli .tablepress tr.row-1 .column-3 {
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #7b0000;
 }
-/* line 139, sass/_partials/_price-tables.scss */
-.price-table.lunch-table .tablepress tr.row-1:hover {
+/* line 140, sass/_partials/_price-tables.scss */
+.price-table.lunch-table .tablepress tr.row-1:hover, .price-table.table-stromboli .tablepress tr.row-1:hover {
   background: transparent;
 }
-/* line 146, sass/_partials/_price-tables.scss */
-.price-table.lunch-table .tablepress tbody td {
+/* line 147, sass/_partials/_price-tables.scss */
+.price-table.lunch-table .tablepress tbody td, .price-table.table-stromboli .tablepress tbody td {
   border: 0;
 }
 
-/* line 156, sass/_partials/_price-tables.scss */
+/* line 157, sass/_partials/_price-tables.scss */
 .entry-content tr td {
   padding: 0;
 }
 
-/* line 163, sass/_partials/_price-tables.scss */
+/* line 164, sass/_partials/_price-tables.scss */
 .allergy-info h2,
 .allergy-info p {
   font-family: "Proximanova Regular";
   color: #000000;
   font-size: 1.4rem;
 }
-/* line 170, sass/_partials/_price-tables.scss */
+/* line 171, sass/_partials/_price-tables.scss */
 .allergy-info h2 {
   margin-bottom: 12px;
   font-weight: 600;
 }
 
-/* line 178, sass/_partials/_price-tables.scss */
+/* line 179, sass/_partials/_price-tables.scss */
 .table-highlight .row-1 td {
   text-align: center;
 }
-/* line 182, sass/_partials/_price-tables.scss */
+/* line 183, sass/_partials/_price-tables.scss */
 .table-highlight .row-2 {
   background: #000000;
   color: #ffffff;
 }
-/* line 186, sass/_partials/_price-tables.scss */
+/* line 187, sass/_partials/_price-tables.scss */
 .table-highlight .row-2 td {
   text-align: center;
   color: #00c18d;
@@ -990,110 +1013,114 @@ nav#top-menu-nav {
   border-right: 3px solid #ffffff;
   font-family: "Proximanova Bold";
 }
-/* line 199, sass/_partials/_price-tables.scss */
+/* line 200, sass/_partials/_price-tables.scss */
 .table-highlight.one-column .row-1 td {
   text-align: left;
 }
-/* line 203, sass/_partials/_price-tables.scss */
+/* line 204, sass/_partials/_price-tables.scss */
 .table-highlight.one-column .tablepress {
   width: 220px;
 }
 
-/* line 211, sass/_partials/_price-tables.scss */
+/* line 212, sass/_partials/_price-tables.scss */
 .table-hot-sandwiches .row-1 td {
   text-align: left;
   padding-bottom: 10px;
 }
-/* line 218, sass/_partials/_price-tables.scss */
+/* line 219, sass/_partials/_price-tables.scss */
 .table-hot-sandwiches .row-3 td {
   text-align: right;
   font-size: 1.2rem;
   color: #000000;
 }
 
-/* line 227, sass/_partials/_price-tables.scss */
+/* line 228, sass/_partials/_price-tables.scss */
 .table-stromboli .tablepress {
   width: 350px;
 }
-/* line 230, sass/_partials/_price-tables.scss */
+/* line 231, sass/_partials/_price-tables.scss */
 .table-stromboli .tablepress .row-1 td {
   text-align: left;
   padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 980px) {
-  /* line 240, sass/_partials/_price-tables.scss */
+  /* line 241, sass/_partials/_price-tables.scss */
   .price-table {
     text-align: center;
   }
-  /* line 243, sass/_partials/_price-tables.scss */
+  /* line 244, sass/_partials/_price-tables.scss */
   .price-table .tablepress {
     width: 100%;
   }
-  /* line 247, sass/_partials/_price-tables.scss */
+  /* line 248, sass/_partials/_price-tables.scss */
   .price-table .tablepress tr td {
     text-align: center;
   }
-  /* line 252, sass/_partials/_price-tables.scss */
+  /* line 253, sass/_partials/_price-tables.scss */
   .price-table .tablepress-table-name {
     margin-top: 15px;
   }
-  /* line 258, sass/_partials/_price-tables.scss */
+  /* line 259, sass/_partials/_price-tables.scss */
   .price-table.sandwiches-table .tablepress {
     width: 50%;
     margin: 15px auto;
   }
 
-  /* line 265, sass/_partials/_price-tables.scss */
+  /* line 266, sass/_partials/_price-tables.scss */
   .allergy-info {
     text-align: center;
   }
 
-  /* line 272, sass/_partials/_price-tables.scss */
+  /* line 273, sass/_partials/_price-tables.scss */
   .table-highlight.one-column .row-1 td {
     text-align: center;
   }
-  /* line 276, sass/_partials/_price-tables.scss */
+  /* line 277, sass/_partials/_price-tables.scss */
   .table-highlight.one-column .tablepress {
     margin: 15px auto;
   }
 
-  /* line 283, sass/_partials/_price-tables.scss */
+  /* line 284, sass/_partials/_price-tables.scss */
   .table-hot-sandwiches .tablepress {
     width: 50%;
     margin: 15px auto;
   }
 
-  /* line 290, sass/_partials/_price-tables.scss */
+  /* line 291, sass/_partials/_price-tables.scss */
   .table-stromboli .tablepress {
     width: 50%;
     margin: 15px auto;
   }
-  /* line 293, sass/_partials/_price-tables.scss */
+  /* line 294, sass/_partials/_price-tables.scss */
   .table-stromboli .tablepress .row-1 td {
     text-align: center;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 306, sass/_partials/_price-tables.scss */
+  /* line 307, sass/_partials/_price-tables.scss */
   .table-hot-sandwiches .tablepress,
   .table-stromboli .tablepress {
     width: 100%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 316, sass/_partials/_price-tables.scss */
+  /* line 317, sass/_partials/_price-tables.scss */
   .price-table.table-hoagie-tray .row-1 td {
     font-size: 1.6rem;
   }
+  /* line 324, sass/_partials/_price-tables.scss */
+  .price-table.sandwiches-table .tablepress {
+    width: 100%;
+  }
 
-  /* line 326, sass/_partials/_price-tables.scss */
+  /* line 333, sass/_partials/_price-tables.scss */
   .table-highlight.table-hoagie-tray .row-2 td {
     font-size: 1rem;
   }
 }
 @media only screen and (max-width: 320px) {
-  /* line 337, sass/_partials/_price-tables.scss */
+  /* line 344, sass/_partials/_price-tables.scss */
   .price-table.sandwiches-table .tablepress {
     width: 100%;
   }
@@ -1202,84 +1229,84 @@ nav#top-menu-nav {
 }
 
 /* line 2, sass/_partials/_contact-us.scss */
+.page-contact-us .et_pb_section {
+  padding: 0;
+}
+
+/* line 8, sass/_partials/_contact-us.scss */
 .contact-us-form label {
   font-size: 1.6rem;
   margin-bottom: 15px;
   display: inline-block;
 }
-/* line 8, sass/_partials/_contact-us.scss */
+/* line 14, sass/_partials/_contact-us.scss */
 .contact-us-form textarea {
   resize: vertical;
 }
-/* line 12, sass/_partials/_contact-us.scss */
+/* line 18, sass/_partials/_contact-us.scss */
 .contact-us-form input,
 .contact-us-form textarea {
   margin-top: 5px;
   padding: 12px;
   font-size: 1.4rem;
 }
-/* line 18, sass/_partials/_contact-us.scss */
+/* line 24, sass/_partials/_contact-us.scss */
 .contact-us-form input.wpcf7-submit,
 .contact-us-form textarea.wpcf7-submit {
   background: transparent;
 }
-/* line 23, sass/_partials/_contact-us.scss */
+/* line 29, sass/_partials/_contact-us.scss */
 .contact-us-form input,
 .contact-us-form textarea {
   background: #efefef;
   transition: background 0.3s ease;
 }
-/* line 28, sass/_partials/_contact-us.scss */
+/* line 34, sass/_partials/_contact-us.scss */
 .contact-us-form input:focus,
 .contact-us-form textarea:focus {
   background: #ffffff;
 }
-/* line 34, sass/_partials/_contact-us.scss */
+/* line 40, sass/_partials/_contact-us.scss */
 .contact-us-form-wrap.et_pb_section {
   padding-top: 0;
 }
-/* line 40, sass/_partials/_contact-us.scss */
+/* line 46, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-form p {
   display: inline-block;
 }
-/* line 43, sass/_partials/_contact-us.scss */
+/* line 49, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-form p:nth-of-type(3), .contact-us-form .wpcf7-form p:nth-of-type(4) {
   display: block;
 }
-/* line 48, sass/_partials/_contact-us.scss */
+/* line 54, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-form p:nth-of-type(1) {
   float: left;
 }
-/* line 52, sass/_partials/_contact-us.scss */
+/* line 58, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-form p:nth-of-type(2) {
   float: right;
 }
-/* line 56, sass/_partials/_contact-us.scss */
+/* line 62, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-form p:nth-of-type(1), .contact-us-form .wpcf7-form p:nth-of-type(2) {
   width: 49%;
 }
-/* line 60, sass/_partials/_contact-us.scss */
+/* line 66, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-form p:nth-of-type(1) input,
 .contact-us-form .wpcf7-form p:nth-of-type(1) label, .contact-us-form .wpcf7-form p:nth-of-type(2) input,
 .contact-us-form .wpcf7-form p:nth-of-type(2) label {
   width: 100%;
 }
-/* line 67, sass/_partials/_contact-us.scss */
+/* line 73, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-form p:nth-of-type(3) input,
 .contact-us-form .wpcf7-form p:nth-of-type(3) label {
   width: 100%;
 }
-/* line 73, sass/_partials/_contact-us.scss */
-.contact-us-form .wpcf7-form p:nth-of-type(5) {
-  width: 100%;
-  text-align: center;
-}
-/* line 79, sass/_partials/_contact-us.scss */
+/* line 80, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-form p:nth-of-type(4) textarea,
 .contact-us-form .wpcf7-form p:nth-of-type(4) label {
   width: 100%;
 }
-/* line 87, sass/_partials/_contact-us.scss */
+/* line 88, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-submit {
   border: 2px solid #000000;
   color: #000000;
@@ -1291,18 +1318,18 @@ nav#top-menu-nav {
   background: transparent;
   transition: background 0.3s ease;
 }
-/* line 98, sass/_partials/_contact-us.scss */
+/* line 99, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-submit:hover {
   cursor: pointer;
   background: #efefef;
 }
-/* line 104, sass/_partials/_contact-us.scss */
+/* line 105, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-not-valid-tip {
   font-family: "Proximanova Bold";
   font-size: 1.6rem;
   margin-top: 10px;
 }
-/* line 110, sass/_partials/_contact-us.scss */
+/* line 111, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-validation-errors {
   border-color: #f00;
   font-size: 1.6rem;
@@ -1310,7 +1337,7 @@ nav#top-menu-nav {
   color: #f00;
   font-family: "Proximanova Bold";
 }
-/* line 118, sass/_partials/_contact-us.scss */
+/* line 119, sass/_partials/_contact-us.scss */
 .contact-us-form .wpcf7-mail-sent-ok {
   padding: 20px;
   font-size: 1.6rem;
@@ -1318,12 +1345,54 @@ nav#top-menu-nav {
   font-family: "Proximanova Bold";
 }
 
+/* line 128, sass/_partials/_contact-us.scss */
+.subscribe-form label {
+  margin-bottom: 0;
+  display: block;
+}
+/* line 132, sass/_partials/_contact-us.scss */
+.subscribe-form label[for="ctct-opt-in"] {
+  display: inline-block;
+  color: #666666;
+  font-size: 1.3rem;
+}
+/* line 139, sass/_partials/_contact-us.scss */
+.subscribe-form input[type="email"] {
+  width: 100%;
+}
+/* line 143, sass/_partials/_contact-us.scss */
+.subscribe-form .ctct-form-field-submit {
+  margin: 20px 0;
+}
+/* line 146, sass/_partials/_contact-us.scss */
+.subscribe-form .ctct-form-field-submit input {
+  border: 2px solid #000000;
+  color: #000000;
+  font-family: "Proximanova Bold";
+  border-radius: 3px;
+  font-size: 2rem;
+  padding: 10px 20px;
+  position: relative;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+/* line 157, sass/_partials/_contact-us.scss */
+.subscribe-form .ctct-form-field-submit input:hover {
+  cursor: pointer;
+  background: #efefef;
+}
+/* line 164, sass/_partials/_contact-us.scss */
+.subscribe-form sub {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
 @media only screen and (max-width: 480px) {
-  /* line 129, sass/_partials/_contact-us.scss */
+  /* line 173, sass/_partials/_contact-us.scss */
   .contact-us-form .wpcf7-form p {
     display: block;
   }
-  /* line 132, sass/_partials/_contact-us.scss */
+  /* line 176, sass/_partials/_contact-us.scss */
   .contact-us-form .wpcf7-form p:nth-of-type(1), .contact-us-form .wpcf7-form p:nth-of-type(2) {
     width: 100%;
     float: none;

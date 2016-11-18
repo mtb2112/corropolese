@@ -1,3 +1,9 @@
+.page-contact-us {
+    .et_pb_section {
+        padding: 0;
+    }
+}
+
 .contact-us-form {
     label {
         font-size: 1.6rem;
@@ -70,11 +76,6 @@
                 }
             }
 
-            &:nth-of-type(5) {
-                width: 100%;
-                text-align: center;
-            }
-
             &:nth-of-type(4) {
                 textarea,
                 label {
@@ -120,6 +121,49 @@
         font-size: 1.6rem;
         color: #398f14;
         font-family: $proximanova-bold;
+    }
+}
+
+.subscribe-form {
+    label {
+        margin-bottom: 0;
+        display: block;
+
+        &[for="ctct-opt-in"] {
+            display: inline-block;
+            color: #666666;
+            font-size: 1.3rem;
+        }
+    }
+
+    input[type="email"] {
+        width: 100%;
+    }
+
+    .ctct-form-field-submit {
+        margin: 20px 0;
+
+        input {
+            border: 2px solid $black;
+            color: $black;
+            font-family: $proximanova-bold;
+            border-radius: 3px;
+            font-size: 2rem;
+            padding: 10px 20px;
+            position: relative;
+            background: transparent;
+            transition: background 0.3s ease;
+
+            &:hover {
+                cursor: pointer;
+                background: lighten($lt-gray, 10%);
+            }
+        }
+    }
+
+    sub {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
     }
 }
 

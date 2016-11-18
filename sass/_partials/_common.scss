@@ -56,6 +56,7 @@
         text-transform: uppercase;
         font-family: $proximanova-black;
         margin-bottom: 10px;
+        word-wrap: normal;
     }
 
     p {
@@ -93,6 +94,19 @@
         font-size: 3rem;
         font-family: $proximanova-black;
         text-transform: uppercase;
+    }
+}
+
+.et_pb_post {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    h2 {
+        font-size: 8rem;
+        line-height: 5rem;
+        a {
+            font-family: $proximanova-bold;
+            color: $red;
+        }
     }
 }
 
@@ -138,5 +152,11 @@
 
     .et_pb_more_button {
         margin-top: 5px;
+    }
+
+    .page-heading {
+        h1 {
+            font-size: 4rem;
+        }
     }
 }
