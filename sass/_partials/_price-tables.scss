@@ -4,6 +4,12 @@
         border: 0;
         width: 550px;
 
+        tbody {
+            td {
+                border-top: 0;
+            }
+        }
+
         &-table {
             &-name {
                 color: $red;
@@ -15,7 +21,7 @@
             &-description {
                 color: $black;
                 font-size: 1.4rem;
-                font-family: $proximanova-black;
+                font-family: $proximanova-bold;
             }
         }
     }
@@ -52,6 +58,20 @@
             .column-4 {
                 font-size: 1.6rem;
                 line-height: 2.4rem;
+            }
+        }
+
+        .row-2 {
+
+            &:hover {
+                background: transparent;
+            }
+            
+            .column-2,
+            .column-3,
+            .column-4 {
+                padding: 0 0 5px 0;
+                font-size: 1.2rem;
             }
         }
 
@@ -175,22 +195,22 @@
 }
 
 .table-highlight {
-    .row-1 {
-        td {
-            text-align: center;
-        }
-    }
     .row-2 {
-        background: $black;
         color: $white;
 
         td {
-            text-align: center;
-            color: $green-highlight;
+            color: $green;
             font-size: 1.5rem;
-            padding: 8px 18px;
+            padding: 8px 0;
             border-right: 3px solid $white;
             font-family: $proximanova-bold;
+        }
+    }
+
+    .row-3 {
+        td {
+            font-size: 1.2rem;
+            color: $black;
         }
     }
 
@@ -201,9 +221,6 @@
                 text-align: left;
             }
         }
-        .tablepress {
-            width: 220px;
-        }
     }
 }
 
@@ -211,13 +228,12 @@
     .row-1 {
         td {
             text-align: left;
-            padding-bottom: 10px;
         }
     }
 
     .row-3 {
         td {
-            text-align: right;
+            text-align: left;
             font-size: 1.2rem;
             color: $black;
         }
@@ -331,7 +347,7 @@
         &.table-hoagie-tray {
             .row-2 {
                 td {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                 }
             }
         }

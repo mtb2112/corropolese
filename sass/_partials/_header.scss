@@ -211,7 +211,7 @@ nav#top-menu-nav {
 
         .mega-menu-item-55.mega-menu-flyout {
             & > .mega-sub-menu {
-                width: 160px;
+                width: 335px;
                 margin-right: 47px;
             }
 
@@ -298,7 +298,7 @@ nav#top-menu-nav {
         #mega-menu-primary-menu {
             & > li.mega-menu-item {
                 & > a.mega-menu-link {
-                    margin-right: 23px;
+                    margin-right: 16px;
                 }
 
                 &:last-child {
@@ -469,6 +469,19 @@ nav#top-menu-nav {
                 &:before {
                     content: '\f107';
                     font-family: $font-awesome;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $screen__m) {
+    #mega-menu-wrap-primary-menu {
+        #mega-menu-primary-menu {
+            > li.mega-menu-item {
+                > a.mega-menu-link {
+                    margin-right: 5px;
+                    font-size: 1.4rem;
                 }
             }
         }
