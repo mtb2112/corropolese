@@ -203,8 +203,7 @@ nav#top-menu-nav {
             }
         }
 
-        .mega-menu-item-57.mega-menu-flyout,
-        .mega-menu-item-515.mega-menu-flyout {
+        .mega-menu-item-57.mega-menu-flyout {
             & > .mega-sub-menu {
                 width: 190px;
             }
@@ -300,12 +299,6 @@ nav#top-menu-nav {
             & > li.mega-menu-item {
                 & > a.mega-menu-link {
                     margin-right: 16px;
-                }
-
-                &:last-child {
-                    & > a.mega-menu-link {
-                        margin-right: 0;
-                    }
                 }
             }
         }
@@ -481,7 +474,6 @@ nav#top-menu-nav {
         #mega-menu-primary-menu {
             > li.mega-menu-item {
                 > a.mega-menu-link {
-                    margin-right: 5px;
                     font-size: 1.4rem;
                 }
             }
