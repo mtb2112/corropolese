@@ -1,4 +1,12 @@
 <?php
+    function remove_cssjs_ver( $src ) {
+        if( strpos( $src, '?ver=' ) )
+            $src = remove_query_arg( 'ver', $src );
+        return $src;
+    }
+    add_filter( 'style_loader_src', 'remove_cssjs_ver', 1000 );
+    add_filter( 'script_loader_src', 'remove_cssjs_ver', 1000 );
+    
     function remove_mobile_header() {
         remove_action('et_header_top', 'et_add_mobile_navigation');
     }
@@ -74,5 +82,5 @@
         }
         return $classes;
     }
-add_filter( 'body_class', 'add_slug_body_class' );
+    add_filter( 'body_class', 'add_slug_body_class' );
 ?>
