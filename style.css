@@ -433,7 +433,11 @@ nav#top-menu-nav {
   background: transparent;
   color: #7b0000;
 }
-/* line 184, sass/_partials/_header.scss */
+/* line 181, sass/_partials/_header.scss */
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item.mega-menu-item-home {
+  display: none;
+}
+/* line 188, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
   background: #ffffff;
   color: #430000;
@@ -441,37 +445,37 @@ nav#top-menu-nav {
   transition: background-color 0.3s ease;
   text-transform: uppercase;
 }
-/* line 191, sass/_partials/_header.scss */
+/* line 195, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover, #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:focus {
   background: #7b0000;
   color: #ffffff;
 }
-/* line 201, sass/_partials/_header.scss */
+/* line 205, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-58.mega-menu-flyout > .mega-sub-menu {
   width: 170px;
 }
-/* line 207, sass/_partials/_header.scss */
+/* line 211, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-57.mega-menu-flyout > .mega-sub-menu {
   width: 190px;
 }
-/* line 213, sass/_partials/_header.scss */
+/* line 217, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-55.mega-menu-flyout > .mega-sub-menu {
   width: 335px;
   margin-right: 47px;
 }
-/* line 220, sass/_partials/_header.scss */
+/* line 224, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-55.mega-menu-flyout.mega-align-bottom-right .mega-menu-item.mega-menu-item-360 > .mega-sub-menu {
   width: 315px;
   left: -315px;
   top: -1px;
 }
-/* line 230, sass/_partials/_header.scss */
+/* line 234, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-55.mega-menu-flyout.mega-align-bottom-right .mega-menu-item.mega-menu-item-361 > .mega-sub-menu {
   width: 170px;
   left: -170px;
   top: -1px;
 }
-/* line 241, sass/_partials/_header.scss */
+/* line 245, sass/_partials/_header.scss */
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-55.mega-menu-flyout.mega-align-bottom-right .mega-menu-item.mega-menu-item-362 > .mega-sub-menu,
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-55.mega-menu-flyout.mega-align-bottom-right .mega-menu-item.mega-menu-item-363 > .mega-sub-menu {
   width: 170px;
@@ -479,56 +483,56 @@ nav#top-menu-nav {
   top: -1px;
 }
 
-/* line 253, sass/_partials/_header.scss */
+/* line 257, sass/_partials/_header.scss */
 #main-content .container {
   padding-top: 0;
 }
 
 @media only screen and (max-width: 1180px) {
-  /* line 260, sass/_partials/_header.scss */
+  /* line 264, sass/_partials/_header.scss */
   .et_header_style_left #et-top-navigation {
     width: 53%;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 267, sass/_partials/_header.scss */
+  /* line 271, sass/_partials/_header.scss */
   #et-secondary-menu,
   #et-secondary-nav {
     display: block !important;
     float: right;
   }
 
-  /* line 273, sass/_partials/_header.scss */
+  /* line 277, sass/_partials/_header.scss */
   #et-secondary-nav {
     float: right;
   }
 
-  /* line 278, sass/_partials/_header.scss */
+  /* line 282, sass/_partials/_header.scss */
   #main-header .et_search_outer {
     margin-top: 5px;
   }
-  /* line 282, sass/_partials/_header.scss */
+  /* line 286, sass/_partials/_header.scss */
   #main-header .et-search-form {
     float: right;
     max-width: 100% !important;
     width: 100% !important;
   }
-  /* line 288, sass/_partials/_header.scss */
+  /* line 292, sass/_partials/_header.scss */
   #main-header .et-search-field {
     margin-left: 0;
   }
-  /* line 292, sass/_partials/_header.scss */
+  /* line 296, sass/_partials/_header.scss */
   #main-header .searchsubmit {
     width: 14.3%;
   }
 
-  /* line 300, sass/_partials/_header.scss */
+  /* line 304, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link {
     margin-right: 16px;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 310, sass/_partials/_header.scss */
+  /* line 314, sass/_partials/_header.scss */
   .et_header_style_left .logo_container {
     position: absolute;
     top: 20px;
@@ -539,7 +543,7 @@ nav#top-menu-nav {
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 323, sass/_partials/_header.scss */
+  /* line 327, sass/_partials/_header.scss */
   .et_header_style_left .logo_container {
     position: relative;
     width: 100%;
@@ -549,61 +553,61 @@ nav#top-menu-nav {
     top: inherit;
     margin-top: 20px;
   }
-  /* line 333, sass/_partials/_header.scss */
+  /* line 337, sass/_partials/_header.scss */
   .et_header_style_left #et-top-navigation {
     width: 100%;
     margin-top: 20px;
   }
-  /* line 338, sass/_partials/_header.scss */
+  /* line 342, sass/_partials/_header.scss */
   .et_header_style_left #et-secondary-menu {
     width: 100%;
   }
-  /* line 342, sass/_partials/_header.scss */
+  /* line 346, sass/_partials/_header.scss */
   .et_header_style_left #et-secondary-nav {
     float: left;
     width: 50%;
   }
 
-  /* line 349, sass/_partials/_header.scss */
+  /* line 353, sass/_partials/_header.scss */
   #main-header .et_search_outer {
     width: 50%;
     margin-top: 0;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 357, sass/_partials/_header.scss */
+  /* line 361, sass/_partials/_header.scss */
   #main-header {
     margin-bottom: 20px;
   }
 
-  /* line 361, sass/_partials/_header.scss */
+  /* line 365, sass/_partials/_header.scss */
   #top-menu-nav {
     position: absolute;
     top: -10px;
     left: 20px;
-    width: 94%;
+    width: 90%;
     z-index: 9999;
   }
 
-  /* line 370, sass/_partials/_header.scss */
+  /* line 374, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu .mega-menu-toggle {
     background: #d5d5d5;
     border-radius: 0;
     width: 37px;
   }
-  /* line 376, sass/_partials/_header.scss */
+  /* line 380, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-1:after {
     content: '';
   }
-  /* line 383, sass/_partials/_header.scss */
+  /* line 387, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu .mega-menu-toggle.mega-menu-open .mega-toggle-block-1:after {
     content: '';
   }
-  /* line 391, sass/_partials/_header.scss */
+  /* line 395, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item {
     display: block;
   }
-  /* line 393, sass/_partials/_header.scss */
+  /* line 397, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item a.mega-menu-link {
     background: #7b0000;
     color: #ffffff;
@@ -612,25 +616,25 @@ nav#top-menu-nav {
     border-bottom: 1px solid #ffffff;
     margin-right: 0;
   }
-  /* line 401, sass/_partials/_header.scss */
+  /* line 405, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item a.mega-menu-link:hover, #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item a.mega-menu-link:focus {
     background: #7b0000;
     color: #ffffff;
   }
-  /* line 407, sass/_partials/_header.scss */
+  /* line 411, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item a.mega-menu-link:before {
     font-family: "FontAwesome";
   }
-  /* line 413, sass/_partials/_header.scss */
+  /* line 417, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item.mega-toggle-on a.mega-menu-link {
     background: #7b0000;
     color: #ffffff;
   }
-  /* line 420, sass/_partials/_header.scss */
+  /* line 424, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item.mega-toggle-on.mega-menu-item-has-children > a.mega-menu-link:before {
     content: '\f106';
   }
-  /* line 429, sass/_partials/_header.scss */
+  /* line 433, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item.mega-menu-item-has-children > a.mega-menu-link:before {
     content: '\f107';
     position: absolute;
@@ -638,12 +642,16 @@ nav#top-menu-nav {
     font-family: "FontAwesome";
   }
   /* line 442, sass/_partials/_header.scss */
+  #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item.mega-menu-item-home {
+    display: block;
+  }
+  /* line 450, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-58.mega-menu-flyout > .mega-sub-menu,
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-57.mega-menu-flyout > .mega-sub-menu,
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-55.mega-menu-flyout > .mega-sub-menu {
     width: 100%;
   }
-  /* line 452, sass/_partials/_header.scss */
+  /* line 460, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-55.mega-menu-flyout.mega-align-bottom-right .mega-menu-item.mega-menu-item-360 > .mega-sub-menu,
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-55.mega-menu-flyout.mega-align-bottom-right .mega-menu-item.mega-menu-item-361 > .mega-sub-menu,
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu .mega-menu-item-55.mega-menu-flyout.mega-align-bottom-right .mega-menu-item.mega-menu-item-362 > .mega-sub-menu,
@@ -651,34 +659,34 @@ nav#top-menu-nav {
     width: 100%;
   }
 
-  /* line 463, sass/_partials/_header.scss */
+  /* line 471, sass/_partials/_header.scss */
   .mega-sub-menu li.mega-menu-item-has-children > .mega-menu-link:before {
     content: '\f107';
     font-family: "FontAwesome";
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 476, sass/_partials/_header.scss */
+  /* line 484, sass/_partials/_header.scss */
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link {
     font-size: 1.4rem;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 486, sass/_partials/_header.scss */
+  /* line 494, sass/_partials/_header.scss */
   .et_header_style_left #et-secondary-nav {
     float: none;
     margin-left: 25px;
     width: inherit;
   }
 
-  /* line 494, sass/_partials/_header.scss */
+  /* line 502, sass/_partials/_header.scss */
   #main-header .et_search_outer {
     float: none;
     width: 100%;
     margin-top: 10px;
   }
 
-  /* line 502, sass/_partials/_header.scss */
+  /* line 510, sass/_partials/_header.scss */
   .et_header_style_left .logo_container {
     transform: scale(0.8, 0.8);
   }

@@ -177,6 +177,10 @@ nav#top-menu-nav {
                     color: $red;
                 }
             }
+
+            &.mega-menu-item-home {
+                display: none;
+            }
         }
 
         & > li.mega-menu-flyout ul.mega-sub-menu {
@@ -362,7 +366,7 @@ nav#top-menu-nav {
         position: absolute;
         top: -10px;
         left: 20px;
-        width: 94%;
+        width: 90%;
         z-index: 9999;
     }
 
@@ -433,6 +437,10 @@ nav#top-menu-nav {
                             font-family: $font-awesome;
                         }
                     }
+                }
+
+                &.mega-menu-item-home {
+                    display: block;
                 }
             }
 
