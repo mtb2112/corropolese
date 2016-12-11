@@ -25,7 +25,7 @@
 
     &-subheading {
         font-family: $proximanova-regular;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -120,6 +120,10 @@
     .slider-text {
         font-size: 6rem;
     }
+
+    .slider-text.slider-subheading {
+        font-size: 1.8rem;
+    }
 }
 
 @media only screen and (max-width: $screen__m) {
@@ -131,6 +135,10 @@
 @media only screen and (max-width: $screen__s) {
     .slider-text {
         font-size: 3.5rem;
+    }
+
+    .slider-text.slider-subheading {
+        font-size: 1.5rem;
     }
 }
 

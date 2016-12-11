@@ -131,7 +131,7 @@ table {
 /* line 26, sass/_partials/_common.scss */
 .slider-subheading {
   font-family: "Proximanova Regular";
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 
 /* line 33, sass/_partials/_common.scss */
@@ -227,42 +227,52 @@ table {
   .slider-text {
     font-size: 6rem;
   }
+
+  /* line 124, sass/_partials/_common.scss */
+  .slider-text.slider-subheading {
+    font-size: 1.8rem;
+  }
 }
 @media only screen and (max-width: 768px) {
-  /* line 126, sass/_partials/_common.scss */
+  /* line 130, sass/_partials/_common.scss */
   .slider-text {
     font-size: 4.5rem;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 132, sass/_partials/_common.scss */
+  /* line 136, sass/_partials/_common.scss */
   .slider-text {
     font-size: 3.5rem;
   }
+
+  /* line 140, sass/_partials/_common.scss */
+  .slider-text.slider-subheading {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (max-width: 480px) {
-  /* line 138, sass/_partials/_common.scss */
+  /* line 146, sass/_partials/_common.scss */
   .slider-text {
     font-size: 2.7rem;
     padding: 3px 8px;
   }
 
-  /* line 144, sass/_partials/_common.scss */
+  /* line 152, sass/_partials/_common.scss */
   .et_pb_slider .et_pb_container {
     margin: 0;
   }
 
-  /* line 149, sass/_partials/_common.scss */
+  /* line 157, sass/_partials/_common.scss */
   .et_pb_button {
     font-size: 1.4rem;
   }
 
-  /* line 153, sass/_partials/_common.scss */
+  /* line 161, sass/_partials/_common.scss */
   .et_pb_more_button {
     margin-top: 5px;
   }
 
-  /* line 158, sass/_partials/_common.scss */
+  /* line 166, sass/_partials/_common.scss */
   .page-heading h1 {
     font-size: 4rem;
   }
