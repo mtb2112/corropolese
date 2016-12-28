@@ -201,6 +201,16 @@ nav#top-menu-nav {
             }
         }
 
+        & li.mega-menu-flyout {
+            &.mega-align-bottom-right {
+                & li.mega-menu-item {
+                    & a.mega-menu-link {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
         .mega-menu-item-58.mega-menu-flyout {
             & > .mega-sub-menu {
                 width: 170px;

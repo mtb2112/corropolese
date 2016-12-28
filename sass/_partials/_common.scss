@@ -89,11 +89,29 @@
     }
 }
 
+.product-list {
+    i {
+        font-size: italic;
+        font-size: 1.2rem;
+        color: $black;
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 .section-heading {
     h2 {
         font-size: 3rem;
         font-family: $proximanova-black;
         text-transform: uppercase;
+    }
+
+    p {
+        font-size: 1.4rem;
+        color: $black;
+        font-weight: 600;
+        margin-top: 5px;
     }
 }
 
