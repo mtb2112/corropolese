@@ -24,6 +24,16 @@
                 font-family: $proximanova-bold;
             }
         }
+
+        .odd {
+            td {
+                background-color: transparent;
+            }
+        }
+
+        th {
+            padding: 0;
+        }
     }
 
     .row-1 {
@@ -168,6 +178,47 @@
                     border: 0;
                 }
             }
+        }
+    }
+
+    &.custom-tomato-pies-table {
+        .tablepress {
+            width: 75%;
+            margin: 0 auto;
+
+            thead {
+                th {
+                    background-color: transparent;
+                    border: 0;
+                }
+            }
+
+            .row-1 {
+                .column-2 {
+                    text-align: center;
+                }
+            }
+        }
+
+        .template-category {
+            font-size: 1.6rem;
+            font-weight: 700;
+            background-color: $red;
+            color: $white;
+            padding: 5px;
+        }
+
+        .locations-heading {
+            font-family: $proximanova-black;
+            font-size: 2.6rem;
+            color: $red;
+            padding-bottom: 10px;
+        }
+
+        .location {
+            font-size: 1.4rem;
+            color: $black;
+            font-family: $proximanova-bold;
         }
     }
 }
@@ -322,6 +373,16 @@
     .table-stromboli {
         .tablepress {
             width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: $screen__s) {
+    .price-table {
+        &.custom-tomato-pies-table {
+            .tablepress {
+                width: 100%;
+            }
         }
     }
 }
