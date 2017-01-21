@@ -82,10 +82,22 @@
 .et_pb_gutters3 {
     .et_pb_column_1_4 {
         width: 34.875%;
+
+        .et_pb_module {
+            &.monthly-cheesecake-image {
+                margin-bottom: 15px;
+            }
+        }
     }
 
     .et_pb_column_3_4 {
         width: 59.625%;
+    }
+}
+
+.et_pb_row {
+    .note {
+        font-size: 1.4rem;
     }
 }
 

@@ -209,8 +209,7 @@
         }
 
         .locations-heading {
-            font-family: $proximanova-black;
-            font-size: 2.6rem;
+            font-size: 1.6rem;
             color: $red;
             padding-bottom: 10px;
         }
@@ -219,6 +218,17 @@
             font-size: 1.4rem;
             color: $black;
             font-family: $proximanova-bold;
+        }
+
+        pre {
+            font-size: 1.9rem;
+            display: inline-block;
+        }
+
+        .note {
+            padding-top: 10px;
+            font-size: 1.4rem;
+            font-style: italic;
         }
     }
 }
