@@ -797,101 +797,161 @@ nav#top-menu-nav {
 .home.page .social-wrap {
   margin-top: 50px;
 }
-/* line 44, sass/_partials/_home.scss */
+/* line 42, sass/_partials/_home.scss */
+.home.page .social-wrap .et_pb_button {
+  font-size: 1.8rem;
+}
+/* line 45, sass/_partials/_home.scss */
+.home.page .social-wrap .et_pb_button:after {
+  top: 2px;
+}
+/* line 52, sass/_partials/_home.scss */
 .home.page .instagram-feed-wrap .et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content {
   width: auto;
   max-width: 100%;
 }
-/* line 50, sass/_partials/_home.scss */
+/* line 58, sass/_partials/_home.scss */
 .home.page .follow-heading {
   margin-top: 90px;
 }
-/* line 54, sass/_partials/_home.scss */
+/* line 62, sass/_partials/_home.scss */
 .home.page .instagram-feed-button-wrap {
   margin: 30px 0;
 }
-/* line 60, sass/_partials/_home.scss */
+/* line 69, sass/_partials/_home.scss */
 .home.page .instagram-follow-button.et_pb_button,
-.home.page .facebook-follow-button.et_pb_button {
+.home.page .facebook-follow-button.et_pb_button,
+.home.page .twitter-follow-button.et_pb_button {
   border-color: #000000;
   color: #000000;
 }
-/* line 67, sass/_partials/_home.scss */
-.home.page .facebook-feed-wrap {
+/* line 76, sass/_partials/_home.scss */
+.home.page .facebook-feed-wrap, .home.page .twitter-feed-wrap {
   padding: 10px;
   border: 1px solid #7b0000;
   margin-top: 12px;
   margin-bottom: 49px;
 }
-/* line 73, sass/_partials/_home.scss */
-.home.page .facebook-feed-wrap .cff-page-name {
+/* line 82, sass/_partials/_home.scss */
+.home.page .facebook-feed-wrap .cff-page-name, .home.page .twitter-feed-wrap .cff-page-name {
   padding: 0;
   font-size: 1.8rem;
 }
-/* line 78, sass/_partials/_home.scss */
-.home.page .facebook-feed-wrap .cff-post-text {
+/* line 87, sass/_partials/_home.scss */
+.home.page .facebook-feed-wrap .cff-post-text, .home.page .twitter-feed-wrap .cff-post-text {
   color: #000000;
 }
-/* line 82, sass/_partials/_home.scss */
-.home.page .facebook-feed-wrap .cff-text {
-  font-size: 1.4rem;
-}
-/* line 85, sass/_partials/_home.scss */
-.home.page .facebook-feed-wrap .cff-text a {
-  font-size: 1.4rem;
-}
 /* line 91, sass/_partials/_home.scss */
-.home.page .facebook-feed-wrap .cff-media-link a {
+.home.page .facebook-feed-wrap .cff-text, .home.page .twitter-feed-wrap .cff-text {
   font-size: 1.4rem;
 }
-/* line 98, sass/_partials/_home.scss */
+/* line 94, sass/_partials/_home.scss */
+.home.page .facebook-feed-wrap .cff-text a, .home.page .twitter-feed-wrap .cff-text a {
+  font-size: 1.4rem;
+}
+/* line 100, sass/_partials/_home.scss */
+.home.page .facebook-feed-wrap .cff-media-link a, .home.page .twitter-feed-wrap .cff-media-link a {
+  font-size: 1.4rem;
+}
+/* line 112, sass/_partials/_home.scss */
+.home.page .twitter-feed-wrap #ctf .ctf-item {
+  padding: 20px 10px 15px 10px;
+}
+/* line 115, sass/_partials/_home.scss */
+.home.page .twitter-feed-wrap #ctf .ctf-item:first-child {
+  padding-top: 0;
+}
+/* line 120, sass/_partials/_home.scss */
+.home.page .twitter-feed-wrap #ctf .ctf-author-avatar {
+  border-radius: 0;
+}
+/* line 124, sass/_partials/_home.scss */
+.home.page .twitter-feed-wrap #ctf.ctf-super-narrow .ctf-author-avatar, .home.page .twitter-feed-wrap #ctf.ctf-super-narrow .ctf-author-avatar img {
+  width: 40px;
+  height: 40px;
+}
+/* line 131, sass/_partials/_home.scss */
+.home.page .twitter-feed-wrap #ctf.ctf-narrow .ctf-tweet-content {
+  padding: 20px 0 5px 0;
+}
+/* line 136, sass/_partials/_home.scss */
+.home.page .twitter-feed-wrap #ctf .ctf-tweet-meta {
+  display: block;
+  padding-left: 9px;
+}
+/* line 141, sass/_partials/_home.scss */
+.home.page .twitter-feed-wrap #ctf .ctf-author-name {
+  margin-top: 0;
+  margin-bottom: -2px;
+}
+/* line 147, sass/_partials/_home.scss */
+.home.page .twitter-feed-wrap .ctf-type-usertimeline {
+  padding: 5px 0;
+}
+/* line 151, sass/_partials/_home.scss */
+.home.page .twitter-feed-wrap .ctf-tweet-text {
+  color: #000000;
+  font-size: 1.4rem;
+  line-height: 19px;
+}
+/* line 158, sass/_partials/_home.scss */
+.home.page .twitter-feed-wrap .ctf-author-box .ctf-author-name {
+  color: #7b0000 !important;
+  font-size: 1.8rem;
+}
+/* line 164, sass/_partials/_home.scss */
+.home.page .twitter-feed-wrap .ctf-tweet-date {
+  color: #9197a3 !important;
+  font-size: 1.1rem;
+}
+/* line 171, sass/_partials/_home.scss */
 .home.page .social-buttons-list {
   display: inline-block;
 }
-/* line 101, sass/_partials/_home.scss */
+/* line 174, sass/_partials/_home.scss */
 .home.page .social-buttons-list a {
   background-color: #000000 !important;
 }
-/* line 106, sass/_partials/_home.scss */
+/* line 179, sass/_partials/_home.scss */
 .home.page .social-links-wrap {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 112, sass/_partials/_home.scss */
+/* line 185, sass/_partials/_home.scss */
 .home.page .et_pb_social_media_follow li a.icon {
   width: 64px;
   height: 64px;
   overflow: hidden;
 }
-/* line 117, sass/_partials/_home.scss */
+/* line 190, sass/_partials/_home.scss */
 .home.page .et_pb_social_media_follow li a.icon:before {
   width: 64px;
   height: 64px;
   padding-top: 15px;
   font-size: 3.6rem;
 }
-/* line 124, sass/_partials/_home.scss */
+/* line 197, sass/_partials/_home.scss */
 .home.page .et_pb_social_media_follow li a.icon.rounded_rectangle {
   border-radius: 0;
 }
-/* line 131, sass/_partials/_home.scss */
+/* line 204, sass/_partials/_home.scss */
 .home.page .mCS-corropolese.mCSB_scrollTools .mCSB_dragger_bar {
   background-color: #7b0000;
   width: 2px;
 }
-/* line 136, sass/_partials/_home.scss */
+/* line 209, sass/_partials/_home.scss */
 .home.page .mCS-corropolese.mCSB_scrollTools .mCSB_draggerRail {
   background-color: transparent;
 }
 
 @media only screen and (max-width: 1180px) {
-  /* line 144, sass/_partials/_home.scss */
+  /* line 217, sass/_partials/_home.scss */
   .home.page .et_pb_section .et_pb_row .et_pb_column .et_pb_module:last-child {
     margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 151, sass/_partials/_home.scss */
+  /* line 224, sass/_partials/_home.scss */
   .et_pb_column {
     margin-bottom: 0;
   }
