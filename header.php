@@ -31,6 +31,7 @@
     </script>
 
     <?php wp_head(); ?>
+    <meta name="google-site-verification" content="t09mGUK7jhNbOke7huUOgEYrTvS-90h_tbom5_cw0Lo" />
 </head>
 <body <?php body_class(); ?>>
     <div id="page-container">
