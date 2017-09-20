@@ -1,4 +1,12 @@
 .price-table {
+    &.list-only {
+        ul {
+            li {
+                font-size: 1.4rem;
+                color: $black;
+            }
+        }
+    }
     .tablepress {
         margin-top: 15px;
         border: 0;
