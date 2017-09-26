@@ -242,63 +242,77 @@ table {
   color: #7b0000;
 }
 
+/* line 146, sass/_partials/_common.scss */
+.catering-section .section-title {
+  color: #7b0000;
+  font-size: 2.6rem;
+  font-family: "Proximanova Black";
+  margin-bottom: 5px;
+}
+/* line 153, sass/_partials/_common.scss */
+.catering-section .section-description {
+  color: #000000;
+  font-size: 1.4rem;
+  font-family: "Proximanova Bold";
+}
+
 @media only screen and (max-width: 1180px) {
-  /* line 144, sass/_partials/_common.scss */
+  /* line 163, sass/_partials/_common.scss */
   .container {
     padding: 0 30px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 150, sass/_partials/_common.scss */
+  /* line 169, sass/_partials/_common.scss */
   .slider-text {
     font-size: 6rem;
   }
 
-  /* line 154, sass/_partials/_common.scss */
+  /* line 173, sass/_partials/_common.scss */
   .slider-text.slider-subheading {
     font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 160, sass/_partials/_common.scss */
+  /* line 179, sass/_partials/_common.scss */
   .slider-text {
     font-size: 4.5rem;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 166, sass/_partials/_common.scss */
+  /* line 185, sass/_partials/_common.scss */
   .slider-text {
     font-size: 3.5rem;
   }
 
-  /* line 170, sass/_partials/_common.scss */
+  /* line 189, sass/_partials/_common.scss */
   .slider-text.slider-subheading {
     font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 176, sass/_partials/_common.scss */
+  /* line 195, sass/_partials/_common.scss */
   .slider-text {
     font-size: 2.7rem;
     padding: 3px 8px;
   }
 
-  /* line 182, sass/_partials/_common.scss */
+  /* line 201, sass/_partials/_common.scss */
   .et_pb_slider .et_pb_container {
     margin: 0;
   }
 
-  /* line 187, sass/_partials/_common.scss */
+  /* line 206, sass/_partials/_common.scss */
   .et_pb_button {
     font-size: 1.4rem;
   }
 
-  /* line 191, sass/_partials/_common.scss */
+  /* line 210, sass/_partials/_common.scss */
   .et_pb_more_button {
     margin-top: 5px;
   }
 
-  /* line 196, sass/_partials/_common.scss */
+  /* line 215, sass/_partials/_common.scss */
   .page-heading h1 {
     font-size: 4rem;
   }
@@ -1159,30 +1173,36 @@ nav#top-menu-nav {
   font-size: 1.4rem;
   font-style: italic;
 }
+/* line 245, sass/_partials/_price-tables.scss */
+.price-table.catering .tablepress-table-name {
+  color: #000000;
+  font-size: 1.8rem;
+  font-family: "Proximanova Bold";
+}
 
-/* line 246, sass/_partials/_price-tables.scss */
+/* line 256, sass/_partials/_price-tables.scss */
 .entry-content tr td {
   padding: 0;
 }
 
-/* line 253, sass/_partials/_price-tables.scss */
+/* line 263, sass/_partials/_price-tables.scss */
 .allergy-info h2,
 .allergy-info p {
   font-family: "Proximanova Regular";
   color: #000000;
   font-size: 1.4rem;
 }
-/* line 260, sass/_partials/_price-tables.scss */
+/* line 270, sass/_partials/_price-tables.scss */
 .allergy-info h2 {
   margin-bottom: 12px;
   font-weight: 600;
 }
 
-/* line 267, sass/_partials/_price-tables.scss */
+/* line 277, sass/_partials/_price-tables.scss */
 .table-highlight .row-2 {
   color: #ffffff;
 }
-/* line 270, sass/_partials/_price-tables.scss */
+/* line 280, sass/_partials/_price-tables.scss */
 .table-highlight .row-2 td {
   color: #007b5a;
   font-size: 1.5rem;
@@ -1190,120 +1210,120 @@ nav#top-menu-nav {
   border-right: 3px solid #ffffff;
   font-family: "Proximanova Bold";
 }
-/* line 280, sass/_partials/_price-tables.scss */
+/* line 290, sass/_partials/_price-tables.scss */
 .table-highlight .row-3 td {
   font-size: 1.2rem;
   color: #000000;
 }
-/* line 289, sass/_partials/_price-tables.scss */
+/* line 299, sass/_partials/_price-tables.scss */
 .table-highlight.one-column .row-1 td {
   text-align: left;
 }
 
-/* line 298, sass/_partials/_price-tables.scss */
+/* line 308, sass/_partials/_price-tables.scss */
 .table-hot-sandwiches .row-1 td {
   text-align: left;
 }
-/* line 304, sass/_partials/_price-tables.scss */
+/* line 314, sass/_partials/_price-tables.scss */
 .table-hot-sandwiches .row-3 td {
   text-align: left;
   font-size: 1.2rem;
   color: #000000;
 }
 
-/* line 313, sass/_partials/_price-tables.scss */
+/* line 323, sass/_partials/_price-tables.scss */
 .table-stromboli .tablepress {
   width: 350px;
 }
-/* line 316, sass/_partials/_price-tables.scss */
+/* line 326, sass/_partials/_price-tables.scss */
 .table-stromboli .tablepress .row-1 td {
   text-align: left;
   padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 980px) {
-  /* line 326, sass/_partials/_price-tables.scss */
+  /* line 336, sass/_partials/_price-tables.scss */
   .price-table {
     text-align: center;
   }
-  /* line 329, sass/_partials/_price-tables.scss */
+  /* line 339, sass/_partials/_price-tables.scss */
   .price-table .tablepress {
     width: 100%;
   }
-  /* line 333, sass/_partials/_price-tables.scss */
+  /* line 343, sass/_partials/_price-tables.scss */
   .price-table .tablepress tr td {
     text-align: center;
   }
-  /* line 338, sass/_partials/_price-tables.scss */
+  /* line 348, sass/_partials/_price-tables.scss */
   .price-table .tablepress-table-name {
     margin-top: 15px;
   }
-  /* line 344, sass/_partials/_price-tables.scss */
+  /* line 354, sass/_partials/_price-tables.scss */
   .price-table.sandwiches-table .tablepress {
     width: 50%;
     margin: 15px auto;
   }
 
-  /* line 351, sass/_partials/_price-tables.scss */
+  /* line 361, sass/_partials/_price-tables.scss */
   .allergy-info {
     text-align: center;
   }
 
-  /* line 358, sass/_partials/_price-tables.scss */
+  /* line 368, sass/_partials/_price-tables.scss */
   .table-highlight.one-column .row-1 td {
     text-align: center;
   }
-  /* line 362, sass/_partials/_price-tables.scss */
+  /* line 372, sass/_partials/_price-tables.scss */
   .table-highlight.one-column .tablepress {
     margin: 15px auto;
   }
 
-  /* line 369, sass/_partials/_price-tables.scss */
+  /* line 379, sass/_partials/_price-tables.scss */
   .table-hot-sandwiches .tablepress {
     width: 50%;
     margin: 15px auto;
   }
 
-  /* line 376, sass/_partials/_price-tables.scss */
+  /* line 386, sass/_partials/_price-tables.scss */
   .table-stromboli .tablepress {
     width: 50%;
     margin: 15px auto;
   }
-  /* line 379, sass/_partials/_price-tables.scss */
+  /* line 389, sass/_partials/_price-tables.scss */
   .table-stromboli .tablepress .row-1 td {
     text-align: center;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 392, sass/_partials/_price-tables.scss */
+  /* line 402, sass/_partials/_price-tables.scss */
   .table-hot-sandwiches .tablepress,
   .table-stromboli .tablepress {
     width: 100%;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 401, sass/_partials/_price-tables.scss */
+  /* line 411, sass/_partials/_price-tables.scss */
   .price-table.custom-tomato-pies-table .tablepress {
     width: 100%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 412, sass/_partials/_price-tables.scss */
+  /* line 422, sass/_partials/_price-tables.scss */
   .price-table.table-hoagie-tray .row-1 td {
     font-size: 1.6rem;
   }
-  /* line 419, sass/_partials/_price-tables.scss */
+  /* line 429, sass/_partials/_price-tables.scss */
   .price-table.sandwiches-table .tablepress {
     width: 100%;
   }
 
-  /* line 428, sass/_partials/_price-tables.scss */
+  /* line 438, sass/_partials/_price-tables.scss */
   .table-highlight.table-hoagie-tray .row-2 td {
     font-size: 1.2rem;
   }
 }
 @media only screen and (max-width: 320px) {
-  /* line 439, sass/_partials/_price-tables.scss */
+  /* line 449, sass/_partials/_price-tables.scss */
   .price-table.sandwiches-table .tablepress {
     width: 100%;
   }

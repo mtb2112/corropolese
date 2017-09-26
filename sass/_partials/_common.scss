@@ -140,6 +140,25 @@
     }
 }
 
+.catering {
+    &-section {
+        .section {
+            &-title {
+                color: $red;
+                font-size: 2.6rem;
+                font-family: $proximanova-black;
+                margin-bottom: 5px;
+            }
+
+            &-description {
+                color: $black;
+                font-size: 1.4rem;
+                font-family: $proximanova-bold;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: $screen__xl) {
     .container {
         padding: 0 30px;

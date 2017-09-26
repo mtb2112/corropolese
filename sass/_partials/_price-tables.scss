@@ -239,6 +239,16 @@
             font-style: italic;
         }
     }
+
+    &.catering {
+        .tablepress {
+            &-table-name {
+                color: $black;
+                font-size: 1.8rem;
+                font-family: $proximanova-bold;
+            }
+        }
+    }
 }
 
 .entry-content {
