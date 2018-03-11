@@ -83,4 +83,75 @@
         return $classes;
     }
     add_filter( 'body_class', 'add_slug_body_class' );
+
+    add_filter( 'wpsl_meta_box_fields', 'custom_meta_box_fields' );
+
+    function custom_meta_box_fields( $meta_fields ) {
+        
+        $meta_fields[__( 'Additional Information', 'wpsl' )] = array(
+            'phone' => array(
+                'label' => __( 'Tel', 'wpsl' )
+            ),
+            'fax' => array(
+                'label' => __( 'Fax', 'wpsl' )
+            ),
+            'email' => array(
+                'label' => __( 'Email', 'wpsl' )
+            ),
+            'url' => array(
+                'label' => __( 'Url', 'wpsl' )
+            ),
+            'additional_notes' => array(
+                'label' => __( 'Additional Notes', 'wpsl' ),
+                'type' => 'textarea'
+            )
+        );
+
+        return $meta_fields;
+    }
+
+    add_filter( 'wpsl_frontend_meta_fields', 'custom_frontend_meta_fields' );
+
+    function custom_frontend_meta_fields( $store_fields ) {
+
+        $store_fields['wpsl_additional_notes'] = array( 
+            'name' => 'additional_notes',
+            'type' => 'text'
+        );
+
+        return $store_fields;
+    }
+
+    add_filter( 'wpsl_listing_template', 'custom_listing_template' );
+
+    function custom_listing_template() {
+
+        global $wpsl_settings;
+
+        $listing_template = '<li data-store-id="<%= id %>">' . "\r\n";
+        $listing_template .= "\t\t" . '<div>' . "\r\n";
+        $listing_template .= "\t\t\t" . '<p><%= thumb %>' . "\r\n";
+        $listing_template .= "\t\t\t\t" . wpsl_store_header_template( 'listing' ) . "\r\n";
+        $listing_template .= "\t\t\t\t" . '<span class="wpsl-street"><%= address %></span>' . "\r\n";
+        $listing_template .= "\t\t\t\t" . '<% if ( address2 ) { %>' . "\r\n";
+        $listing_template .= "\t\t\t\t" . '<span class="wpsl-street"><%= address2 %></span>' . "\r\n";
+        $listing_template .= "\t\t\t\t" . '<% } %>' . "\r\n";
+        $listing_template .= "\t\t\t\t" . '<span>' . wpsl_address_format_placeholders() . '</span>' . "\r\n";
+        $listing_template .= "\t\t\t\t" . '<span class="wpsl-country"><%= country %></span>' . "\r\n";
+        $listing_template .= "\t\t\t" . '</p>' . "\r\n";
+        $listing_template .= "\t\t" . '</div>' . "\r\n";
+
+        // Check if we need to show the distance.
+        if ( !$wpsl_settings['hide_distance'] ) {
+            $listing_template .= "\t\t" . '<p><span><%= distance %>' . esc_html( $wpsl_settings['distance_unit'] ) . '</span></p>' . "\r\n";
+        }
+        $listing_template .= "\t\t\t" . '<% if ( additional_notes ) { %>' . "\r\n";
+        $listing_template .= "\t\t\t" . '<p><span class="wpsl-notes"><%= additional_notes %></span></p>' . "\r\n";
+        $listing_template .= "\t\t\t" . '<% } %>' . "\r\n";
+     
+        $listing_template .= "\t\t" . '<%= createDirectionUrl() %>' . "\r\n"; 
+        $listing_template .= "\t" . '</li>' . "\r\n"; 
+
+        return $listing_template;
+    }
 ?>

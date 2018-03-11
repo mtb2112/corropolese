@@ -159,6 +159,37 @@
     }
 }
 
+.disclaimer {
+    &-container {
+        &.et_pb_section {
+        padding-top: 0;
+        }
+
+        span {
+            font-size: 1.4rem;
+            color: $black;
+        }
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.price-disclaimer {
+    span {
+        font-size: 1.4rem;
+        color: $black;
+        font-style: italic;
+    }
+
+    &-section {
+        &.et_pb_section {
+            padding: 0;
+        }
+    }
+}
+
 @media only screen and (max-width: $screen__xl) {
     .container {
         padding: 0 30px;

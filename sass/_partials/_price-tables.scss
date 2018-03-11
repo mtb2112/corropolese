@@ -87,7 +87,8 @@
             
             .column-2,
             .column-3,
-            .column-4 {
+            .column-4,
+            .column-5 {
                 padding: 0 0 5px 0;
                 font-size: 1.2rem;
             }
@@ -191,7 +192,7 @@
 
     &.custom-tomato-pies-table {
         .tablepress {
-            width: 75%;
+            width: 100%;
             margin: 0 auto;
 
             thead {
