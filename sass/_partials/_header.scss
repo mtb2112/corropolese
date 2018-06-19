@@ -181,6 +181,13 @@ nav#top-menu-nav {
             &.mega-menu-item-home {
                 display: none;
             }
+
+            &.mega-current-menu-item {
+                & > a.mega-menu-link {
+                    background: transparent;
+                    color: $red;
+                }
+            }
         }
 
         & > li.mega-menu-flyout ul.mega-sub-menu {

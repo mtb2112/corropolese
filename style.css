@@ -363,6 +363,9 @@ nav#top-menu-nav {
     color: #7b0000; }
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item.mega-menu-item-home {
     display: none; }
+  #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link {
+    background: transparent;
+    color: #7b0000; }
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
     background: #ffffff;
     color: #430000;
