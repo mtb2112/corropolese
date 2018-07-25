@@ -167,6 +167,54 @@
     }
 }
 
+.contact {
+    &-numbers {
+        &-item {
+            h2 {
+                color: $red;
+                font-family: $proximanova-black;
+                font-size: 2.6rem;
+                margin-bottom: 5px;
+            }
+
+            label,
+            span {
+                color: $black;
+                font-size: 1.4rem;
+                font-family: $proximanova-bold;
+            }
+        }
+    }
+}
+
+.et_pb_gutters3 {
+    .contact-numbers-row {
+        .et_pb_column_1_4 {
+            width: 20.875%;
+        }
+    }
+}
+
+@media only screen and (max-width: $screen__xl) {
+    .contact {
+        &-numbers {
+            &-row {
+                &.et_pb_row {
+                    .et_pb_column {
+                        .contact-numbers-item {
+                            &.et_pb_module {
+                                &:last-child {
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: $screen__xs) {
     .contact-us-form {
         .wpcf7-form  {
@@ -177,6 +225,24 @@
                 &:nth-of-type(2) {
                     width: 100%;
                     float: none;
+                }
+            }
+        }
+    }
+
+    .contact {
+        &-numbers {
+            &-row {
+                &.et_pb_row {
+                    .et_pb_column {
+                        .contact-numbers-item {
+                            &.et_pb_module {
+                                &:last-child {
+                                    margin-bottom: auto;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
