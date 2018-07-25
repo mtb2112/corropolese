@@ -529,3 +529,32 @@ nav#top-menu-nav {
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .mega {
+        &-toggle {
+            &-label {
+                display: none;
+            }
+        }
+    }
+
+    #mega-menu-wrap {
+        &-primary-menu {
+            .mega-menu-toggle {
+                &.mega-menu-open {
+                    .mega-toggle-block-1 {
+                        &:after {
+                            content: '\f333';
+                        }
+                    }
+                }
+                .mega-toggle-block-1 {
+                    &:after {
+                        content: '\f333';
+                    }
+                }
+            }
+        }
+    }
+}
