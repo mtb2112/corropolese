@@ -25,14 +25,14 @@
     }
 
     .title {
-        font-family: $proximanova-black;
+        font-family: $block-berthold;
         font-size: 4.17rem;
     }
 
     .tagline {
-        font-family: $proximanova-black;
+        font-family: $antonio;
         font-size: 1.43rem;
-        color: $black;
+        color: $dk-green;
         position: absolute;
         right: 17px;
         bottom: -19px;
@@ -87,7 +87,8 @@
         position: relative;
         float: left;
         width: 38%;
-        margin-top: 35px;
+        margin-top: 25px;
+        margin-bottom: 15px;
     }
 
     #et-top-navigation {
