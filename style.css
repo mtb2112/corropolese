@@ -1184,6 +1184,25 @@ nav#top-menu-nav {
   .contact-numbers-row.et_pb_row .et_pb_column .contact-numbers-item.et_pb_module:last-child {
     margin-bottom: auto; } }
 
+.newsletter-input {
+  width: 100%; }
+
+.newsletter-submit {
+  border: 2px solid #000000;
+  color: #000000;
+  font-family: "Proximanova Bold";
+  border-radius: 3px;
+  font-size: 2rem;
+  padding: 10px 20px;
+  position: relative;
+  background: transparent;
+  transition: background 0.3s ease;
+  margin: 20px 0;
+  text-transform: uppercase; }
+  .newsletter-submit:hover {
+    cursor: pointer;
+    background: #efefef; }
+
 .entry-content .table {
   border: 0; }
   .entry-content .table tr td {

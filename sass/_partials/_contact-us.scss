@@ -248,3 +248,28 @@
         }
     }
 }
+
+.newsletter {
+    &-input {
+        width: 100%;
+    }
+
+    &-submit {
+        border: 2px solid $black;
+        color: $black;
+        font-family: $proximanova-bold;
+        border-radius: 3px;
+        font-size: 2rem;
+        padding: 10px 20px;
+        position: relative;
+        background: transparent;
+        transition: background 0.3s ease;
+        margin: 20px 0;
+        text-transform: uppercase;
+
+        &:hover {
+            cursor: pointer;
+            background: lighten($lt-gray, 10%);
+        }
+    }
+}
