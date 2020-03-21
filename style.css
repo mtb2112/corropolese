@@ -264,6 +264,23 @@ table {
   max-width: 1180px;
   width: 100%; }
 
+.alert {
+  text-align: center;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative; }
+  .alert-danger {
+    background-color: #430000; }
+  .alert .close {
+    position: absolute;
+    right: 15px;
+    font-size: 1.5rem;
+    top: 36%; }
+    .alert .close:hover {
+      cursor: pointer; }
+
 #main-header {
   border-top: 7px solid #7b0000;
   box-shadow: inset 0 7px #007b5a;

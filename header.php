@@ -170,7 +170,7 @@
             </div>
         </div>
     <?php endif; // true ==== $et_slide_header ?>
-
+        <div class="alert alert-danger">Due to COVID-19 we will be closed until further notice - follow us on social media for more updates. <span class="close">X</span></div>
         <header id="main-header" data-height-onload="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>">
             <div class="container clearfix et_menu_container">
             <?php

@@ -6,6 +6,10 @@
                 theme: 'corropolese'
             });
         });
+
+        $(".alert .close").click(function() {
+          $( ".alert" ).remove();
+        });
     });
 
 })(jQuery);
