@@ -65,7 +65,7 @@
     .et_search_outer {
         position: relative;
         float: right;
-        width: 60%;
+        width: 45%;
     }
 
     .container.et_search_form_container {
@@ -117,7 +117,7 @@
 
     #et-top-navigation {
         padding-top: 0;
-        width: 46%;
+        width: 60%;
     }
 }
 
@@ -126,10 +126,32 @@
         padding-top: 2px;
         margin-right: 13px;
 
-        &:first-child {
+        &:nth-child(2) {
             border-right: 1px solid $red;
             line-height: 1.7rem;
             padding-right: 15px;
+        }
+
+        &:first-child {
+            padding: 0 25px 0 0;
+            position: relative;
+
+            a {
+                font-size: 0;
+                width: 113px;
+                height: 29px;
+                background-image: url('images/goldbelly-header-logo.jpg');
+                position: relative;
+
+                &:after {
+                    content: 'Order Online';
+                    position: absolute;
+                    left: 13%;
+                    top: 70%;
+                    font-size: 1.1rem;
+                    color: $red;
+                }
+            }
         }
     }
 }
@@ -140,6 +162,7 @@
     .menu-item {
         text-transform: uppercase;
         display: baseline;
+        vertical-align: middle;
     }
 
     & > ul {
@@ -149,7 +172,7 @@
                 padding-bottom: 0;
             }
 
-            &:first-child {
+            &:nth-child(2) {
                 a {
                     &:before {
                         font-family: $font-awesome;
@@ -307,6 +330,11 @@ nav#top-menu-nav {
             width: 53%;
         }
     }
+
+    #et-secondary-nav {
+        float: right;
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen and (max-width: $screen__l) {
@@ -364,6 +392,39 @@ nav#top-menu-nav {
     }
 }
 
+@media only screen and (max-width: 725px) {
+    .et_header_style_left {
+        .logo_container {
+            position: relative;
+            text-align: center;
+        }
+
+        #et-top-navigation {
+            width: 100%;
+
+            #et-secondary-nav {
+                width: 100%;
+                padding-left: 30px;
+                margin-top: 30px;
+            }
+
+            #et-secondary-menu {
+                width: 100%;
+            }
+        }
+    }
+
+    #main-header {
+        .et_search_outer {
+            width: 66%;
+            float: none;
+            margin: 0 auto;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
 @media only screen and (max-width: $screen__s) {
     .et_header_style_left {
         .logo_container {
@@ -379,6 +440,10 @@ nav#top-menu-nav {
         #et-top-navigation {
             width: 100%;
             margin-top: 20px;
+
+            #et-secondary-nav {
+                margin-top: 0;
+            }
         }
 
         #et-secondary-menu {
@@ -538,6 +603,34 @@ nav#top-menu-nav {
             margin-left: 25px;
             width: inherit;
         }
+
+        #et-top-navigation {
+            #et-secondary-nav {
+                padding-left: 0;
+                margin-left: 0;
+            }
+        }
+    }
+
+    #et-secondary-menu {
+        .menu-item {
+            margin-bottom: 15px;
+        }
+    }
+
+    #et-secondary-nav {
+        li {
+            &:first-child {
+                display: block;
+                padding-right: 0;
+                margin-right: 0;
+
+                a {
+                    margin: 0 auto;
+                    position: relative;
+                }
+            }
+        }
     }
 
     #main-header {
@@ -545,6 +638,7 @@ nav#top-menu-nav {
             float: none;
             width: 100%;
             margin-top: 10px;
+            padding-left: 0;
         }
     }
 
@@ -583,3 +677,4 @@ nav#top-menu-nav {
         }
     }
 }
+
