@@ -1282,7 +1282,9 @@ nav#top-menu-nav {
 .subscribe-form input[type="email"] {
   width: 100%; }
 
-.subscribe-form input[name="email"] {
+.subscribe-form input[name="email"],
+.subscribe-form select,
+.subscribe-form .g-recaptcha {
   margin-bottom: 15px; }
 
 .subscribe-form .ctct-form-field-submit {
@@ -1371,3 +1373,9 @@ nav#top-menu-nav {
   transition: background-color .15s ease; }
   .btn:hover {
     background-color: #ad2828; }
+
+.contact-us-form button.wpcf7-submit:disabled {
+  border-color: #d5d5d5;
+  color: #d5d5d5;
+  background: #a2a2a2;
+  cursor: not-allowed; }

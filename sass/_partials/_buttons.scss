@@ -12,3 +12,17 @@
     background-color: darken($red-secondary, 10%);
   }
 }
+
+
+.contact-us-form {
+  button {
+    &.wpcf7-submit {
+      &:disabled {
+        border-color: $lt-gray;
+        color: $lt-gray;
+        background: darken($lt-gray, 20%);
+        cursor: not-allowed;
+      }
+    }
+  }
+}

@@ -147,7 +147,9 @@
         width: 100%;
     }
 
-    input[name="email"] {
+    input[name="email"],
+    select,
+    .g-recaptcha {
         margin-bottom: 15px;
     }
 
