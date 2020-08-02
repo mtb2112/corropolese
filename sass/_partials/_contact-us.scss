@@ -16,7 +16,8 @@
     }
 
     input,
-    textarea {
+    textarea,
+    select {
         margin-top: 5px;
         padding: 12px;
         font-size: 1.4rem;
@@ -26,10 +27,16 @@
         }
     }
 
+    select {
+        cursor: pointer;
+    }
+
     input,
-    textarea {
+    textarea,
+    select {
         background: lighten($lt-gray, 10%);
         transition: background 0.3s ease;
+        width: 100%;
 
         &:focus {
             background: $white;
@@ -138,6 +145,10 @@
 
     input[type="email"] {
         width: 100%;
+    }
+
+    input[name="email"] {
+        margin-bottom: 15px;
     }
 
     .ctct-form-field-submit {

@@ -1191,20 +1191,28 @@ nav#top-menu-nav {
   resize: vertical; }
 
 .contact-us-form input,
-.contact-us-form textarea {
+.contact-us-form textarea,
+.contact-us-form select {
   margin-top: 5px;
   padding: 12px;
   font-size: 1.4rem; }
   .contact-us-form input.wpcf7-submit,
-  .contact-us-form textarea.wpcf7-submit {
+  .contact-us-form textarea.wpcf7-submit,
+  .contact-us-form select.wpcf7-submit {
     background: transparent; }
 
+.contact-us-form select {
+  cursor: pointer; }
+
 .contact-us-form input,
-.contact-us-form textarea {
+.contact-us-form textarea,
+.contact-us-form select {
   background: #efefef;
-  transition: background 0.3s ease; }
+  transition: background 0.3s ease;
+  width: 100%; }
   .contact-us-form input:focus,
-  .contact-us-form textarea:focus {
+  .contact-us-form textarea:focus,
+  .contact-us-form select:focus {
     background: #ffffff; }
 
 .contact-us-form-wrap.et_pb_section {
@@ -1273,6 +1281,9 @@ nav#top-menu-nav {
 
 .subscribe-form input[type="email"] {
   width: 100%; }
+
+.subscribe-form input[name="email"] {
+  margin-bottom: 15px; }
 
 .subscribe-form .ctct-form-field-submit {
   margin: 20px 0; }
