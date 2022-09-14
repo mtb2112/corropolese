@@ -227,6 +227,12 @@ table {
 .price-disclaimer-section.et_pb_section {
   padding: 0; }
 
+.et-waypoint:not(.et_pb_counters) {
+  opacity: 1; }
+
+.et-fb-modal__content {
+  font-size: 13px; }
+
 @media only screen and (max-width: 1180px) {
   .container {
     padding: 0 30px; } }
@@ -348,29 +354,34 @@ table {
   padding-top: 0;
   width: 60%; }
 
-#et-secondary-nav li {
-  padding-top: 2px;
-  margin-right: 13px; }
-  #et-secondary-nav li:nth-child(2) {
-    border-right: 1px solid #7b0000;
-    line-height: 1.7rem;
-    padding-right: 15px; }
-  #et-secondary-nav li:first-child {
-    padding: 0 25px 0 0;
-    position: relative; }
-    #et-secondary-nav li:first-child a {
-      font-size: 0;
-      width: 113px;
-      height: 29px;
-      background-image: url("images/goldbelly-header-logo.jpg");
+#et-secondary-nav {
+  display: inline-block; }
+  #et-secondary-nav li {
+    padding-top: 2px;
+    margin-right: 13px;
+    display: inline-block;
+    position: relative;
+    text-align: right; }
+    #et-secondary-nav li:nth-child(2) {
+      border-right: 1px solid #7b0000;
+      line-height: 1.7rem;
+      padding-right: 15px; }
+    #et-secondary-nav li:first-child {
+      padding: 0 25px 0 0;
       position: relative; }
-      #et-secondary-nav li:first-child a:after {
-        content: 'Order Online';
-        position: absolute;
-        left: 13%;
-        top: 70%;
-        font-size: 1.1rem;
-        color: #7b0000; }
+      #et-secondary-nav li:first-child a {
+        font-size: 0;
+        width: 113px;
+        height: 29px;
+        background-image: url("images/goldbelly-header-logo.jpg");
+        position: relative; }
+        #et-secondary-nav li:first-child a:after {
+          content: 'Order Online';
+          position: absolute;
+          left: 13%;
+          top: 70%;
+          font-size: 1.1rem;
+          color: #7b0000; }
 
 #et-secondary-menu {
   float: none; }
@@ -380,7 +391,8 @@ table {
     vertical-align: middle; }
   #et-secondary-menu > ul > li a {
     font-size: 1.3rem;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    display: block; }
   #et-secondary-menu > ul > li:nth-child(2) a:before {
     font-family: "FontAwesome";
     content: '\f041';
@@ -719,7 +731,7 @@ nav#top-menu-nav {
   height: 40px; }
 
 .home.page .twitter-feed-wrap #ctf.ctf-narrow .ctf-tweet-content {
-  padding: 20px 0 5px 0; }
+  padding: 5px 0; }
 
 .home.page .twitter-feed-wrap #ctf .ctf-tweet-meta {
   display: block;
@@ -809,6 +821,31 @@ nav#top-menu-nav {
 
 .home.page .et_pb_slide_content .slide-with-text p:last-of-type {
   padding-bottom: 0; }
+
+#cff .cff-author .cff-page-name.cff-author-date {
+  font-size: 21px; }
+
+#ctf.ctf-styles .ctf-context {
+  padding-left: 0;
+  font-size: 18px; }
+
+#ctf .ctf-twitterlink {
+  margin-top: 9px;
+  line-height: 0; }
+
+.ctf-tweet-actions {
+  font-size: 22px; }
+
+.ctf-author-box {
+  position: relative; }
+
+#ctf.ctf-narrow .ctf-corner-logo {
+  position: absolute;
+  top: 3px;
+  right: -25px; }
+
+.ctf-tweet-text a {
+  font-size: 1.4rem; }
 
 @media only screen and (max-width: 1180px) {
   .home.page .et_pb_section .et_pb_row .et_pb_column .et_pb_module:last-child {

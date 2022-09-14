@@ -190,6 +190,14 @@
     }
 }
 
+.et-waypoint:not(.et_pb_counters) {
+    opacity: 1;
+}
+
+.et-fb-modal__content {
+    font-size: 13px;
+}
+
 @media only screen and (max-width: $screen__xl) {
     .container {
         padding: 0 30px;

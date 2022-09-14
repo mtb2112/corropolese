@@ -59,20 +59,21 @@
     }
 
     function pr_scripts_styles() {
-        wp_enqueue_script('jquery');
-
-        wp_register_script('custom_js',get_stylesheet_directory_uri().'/js/app.js');
-        wp_register_script('scrollbar_js',get_stylesheet_directory_uri().'/js/jquery.mCustomScrollbar.js');
-
         wp_register_style('scrollbar_css',get_stylesheet_directory_uri().'/css/jquery.mCustomScrollbar.css');
-
-        wp_enqueue_script('custom_js');
-        wp_enqueue_script('scrollbar_js');
-
         wp_enqueue_style('scrollbar_css');
     }
 
     add_action( 'wp_enqueue_scripts', 'pr_scripts_styles' );
+
+    function add_this_script_footer() {
+        wp_enqueue_script('jquery');
+        wp_register_script('scrollbar_js',get_stylesheet_directory_uri().'/js/jquery.mCustomScrollbar.js');
+        wp_enqueue_script('custom_js');
+        wp_enqueue_script('scrollbar_js');
+        wp_register_script('custom_js',get_stylesheet_directory_uri().'/js/app.js');
+    }
+
+    add_action('wp_footer', 'add_this_script_footer');
 
     //Page Slug Body Class
     function add_slug_body_class( $classes ) {
