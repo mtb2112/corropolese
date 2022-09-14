@@ -1416,3 +1416,14 @@ nav#top-menu-nav {
   color: #d5d5d5;
   background: #a2a2a2;
   cursor: not-allowed; }
+
+.awsm-job-main .awsm-job-item h2.awsm-job-post-title {
+  font-size: 3rem; }
+
+.awsm-job-main .awsm-job-item .awsm-job-specification-term,
+.awsm-job-main .awsm-job-item .awsm-job-more {
+  font-size: 1.6rem; }
+
+.awsm-job-main .awsm-job-item .awsm-job-more {
+  margin-top: 15px;
+  display: block; }

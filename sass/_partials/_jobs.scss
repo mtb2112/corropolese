@@ -1,0 +1,21 @@
+.awsm {
+    &-job-main {
+        .awsm-job {
+            &-item {
+                h2.awsm-job-post-title {
+                    font-size: 3rem;
+                }
+
+                .awsm-job-specification-term,
+                .awsm-job-more {
+                    font-size: 1.6rem;
+                }
+
+                .awsm-job-more {
+                    margin-top: 15px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
