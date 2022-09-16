@@ -192,6 +192,7 @@
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                         <span class="title"><?php echo esc_attr( get_bloginfo( 'name' ) ); ?></span>
                         <span class="tagline"><?php echo esc_attr( get_bloginfo( 'description' ) ); ?></span>
+                        <span class="logo">&nbsp;</span>
                     </a>
                 </div>
                 <div id="et-top-navigation" data-height="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>" data-fixed-height="<?php echo esc_attr( et_get_option( 'minimized_menu_height', '40' ) ); ?>">
