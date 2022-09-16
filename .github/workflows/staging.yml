@@ -17,4 +17,4 @@ jobs:
         server: fullsail.dreamhost.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: paulguardino.net/corropolese-staging/wp-content/themes/
+        server-dir: paulguardino.net/corropolese-staging/wp-content/themes/corropolese/
