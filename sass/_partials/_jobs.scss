@@ -1,21 +1,162 @@
 .awsm {
-    &-job-main {
-        .awsm-job {
-            &-item {
-                h2.awsm-job-post-title {
-                    font-size: 3rem;
-                }
+    &-job-item {
+        h2 {
+            &.awsm-job-post-title {
+                font-size: 1.8rem;
+                font-family: $proximanova-bold;
+                color: $red;
+            }
+        }
+    }
 
-                .awsm-job-specification-term,
-                .awsm-job-more {
-                    font-size: 1.6rem;
-                }
+    &-job-specification-item {
+        font-size: 2.4rem;
+    }
 
-                .awsm-job-more {
-                    margin-top: 15px;
-                    display: block;
+    &-job-more {
+        font-size: 1.4rem;
+        margin-top: 15px;
+        display: block;
+    }
+
+    &-selectric {
+        .label {
+            font-size: 1.6rem;
+        }
+
+        &-items {
+            li {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &-filter-toggle-text-wrapper {
+        font-size: 1.6rem;
+    }
+
+    &-job-container {
+        h1 {
+            font-size: 2.8rem;
+            font-family: $proximanova-bold;
+            color: $red;
+        }
+
+        .entry-content {
+            padding-top: 15px;
+            p {
+                line-height: 2.7rem;
+                font-size: 1.8rem;
+            }
+
+            ul {
+                padding-left: 15px;
+
+                li {
+                    font-size: 1.8rem;
                 }
             }
+        }
+
+        .awsm-job-specifications-container {
+            .awsm-job-specification-label {
+                strong {
+                    font-family: $proximanova-bold;
+                    font-size: 1.8rem;
+                }
+            }
+
+            .awsm-job-specification-term {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    &-job-form {
+        .awsm-job-form-inner {
+            padding: 15px;
+
+            h2 {
+                font-size: 2.0rem;
+                margin: 0 0 20px;
+            }
+
+            label {
+                font-size: 1.6rem;
+            }
+
+            input,
+            textarea {
+                background: #efefef;
+                transition: all 0.3s ease;
+                width: 100%;
+                padding: 12px;
+                font-size: 1.4rem;
+                border: 1px solid #bbb;
+
+                &:focus {
+                    background: $white;
+                    border: 1px solid $black;
+                }
+            }
+
+            textarea {
+                resize: none;
+            }
+
+            input {
+                &.awsm-form-file-control {
+                    background: $white;
+                    padding: 0;
+                    border: 0;
+                }
+
+                &[type=checkbox] {
+                    width: inherit;
+                }
+
+                &.awsm-application-submit-btn {
+                    border: 2px solid $black;
+                    color: $black;
+                    border-radius: 3px;
+                    font-family: $proximanova-bold;
+                    font-size: 2rem;
+                    padding: 10px 20px;
+                    position: relative;
+                    background: transparent;
+                    transition: background 0.3s ease;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #efefef;
+                    }
+                }
+            }
+
+            .awsm-job-form-group {
+                small {
+                    display: inline-block;
+                    font-size: 1.2rem;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .awsm-job-form-error {
+            font-size: 1.8rem;
+            margin-top: 5px;
+        }
+    }
+
+    &-success-message {
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: $screen__xl) {
+    .awsm {
+        &-job-container {
+            width: 80%;
         }
     }
 }
