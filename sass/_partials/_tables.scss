@@ -10,4 +10,10 @@
       }
     }
   }
+
+  table {
+    &:not(.variations) {
+      border: 0;
+    }
+  }
 }
