@@ -1540,6 +1540,10 @@ nav#top-menu-nav {
 .awsm-success-message {
   font-size: 2.6rem; }
 
+.jobs-none-container {
+  text-align: center;
+  font-size: 3.0rem; }
+
 @media only screen and (max-width: 1180px) {
   .awsm-job-container {
     width: 80%; } }
