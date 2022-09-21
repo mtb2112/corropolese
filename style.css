@@ -1426,6 +1426,9 @@ nav#top-menu-nav {
     padding: 3px 0;
     color: #000000; }
 
+.entry-content table:not(.variations) {
+  border: 0; }
+
 .btn {
   background-color: #d13737;
   color: #ffffff;
