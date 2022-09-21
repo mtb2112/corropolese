@@ -153,6 +153,11 @@
     }
 }
 
+.jobs-none-container {
+    text-align: center;
+    font-size: 3.0rem;
+}
+
 @media only screen and (max-width: $screen__xl) {
     .awsm {
         &-job-container {
