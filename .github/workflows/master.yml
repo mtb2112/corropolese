@@ -17,4 +17,4 @@ jobs:
         server: corropolesebakery.com
         username: ${{ secrets.ftp_username_prod }}
         password: ${{ secrets.ftp_password_prod }}
-        server-dir: corropolesebakery.com/wp-content/themes/Corropolese/
+        server-dir: corropolesebakery.com/wp-content/themes/divi-child/
