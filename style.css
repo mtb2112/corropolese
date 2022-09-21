@@ -1536,3 +1536,10 @@ nav#top-menu-nav {
 .awsm-job-form .awsm-job-form-error {
   font-size: 1.8rem;
   margin-top: 5px; }
+
+.awsm-success-message {
+  font-size: 2.6rem; }
+
+@media only screen and (max-width: 1180px) {
+  .awsm-job-container {
+    width: 80%; } }

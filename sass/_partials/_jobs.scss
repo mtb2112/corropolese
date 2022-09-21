@@ -147,4 +147,16 @@
             margin-top: 5px;
         }
     }
+
+    &-success-message {
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: $screen__xl) {
+    .awsm {
+        &-job-container {
+            width: 80%;
+        }
+    }
 }
